@@ -3,7 +3,7 @@ import { FaSquareGithub } from "react-icons/fa6";
 
 const WhatcanIdo = () => {
   return (
-    <div className="w-full h-[100vh]">
+    <div className="w-full h-[95vh]">
       <div className="m-8 items-center flex">
         <div className="max-w-[55vw] pl-8 pt-20 gap-8 flex flex-col h-[100vh] ">
           <h1 className="text-3xl hover:text-cstmclr-950 text-cstmclr-800 font-extrabold">

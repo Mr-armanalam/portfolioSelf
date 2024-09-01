@@ -28,7 +28,7 @@ const navbar = () => {
             <Link href="#resume">Resume</Link>
           </li>
           <li className="hover:text-cstmclr-950 hover:font-bold">
-            <Link href="#about">About Us</Link>
+            <Link href="aboutMe">About Us</Link>
           </li>
         </ul>
         <button
