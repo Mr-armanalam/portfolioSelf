@@ -7,7 +7,7 @@ import {projectdata} from "@/assets/projectdata"
 
 const Projects = () => {
   return (
-    <section className="max-h-full h-[104vh] px-8 py-12  w-full">
+    <section className="max-h-full h-[104vh] px-12 py-12  w-full">
       <div className="pb-8">
           <h1 className="text-3xl font-extrabold text-cstmclr-800 hover:text-blue-900">
             Projects
