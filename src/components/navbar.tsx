@@ -1,42 +1,49 @@
-
+'use client'
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
+import NavItem from './navItem';
+import { FaBars } from "react-icons/fa6";
+import { FaXmark } from "react-icons/fa6";
 
 const navbar = () => {
+  const [togglebtn, setTogglebtn] = useState(false);
   return (
     <nav className="absolute left-0 right-0 w-full">
-      <div className="flex border-y-2 border-cstmclr-300 h-16 md:h-12 items-center relative bg-slate-50">
-        <div className="font-extrabold px-8 text-cstmclr-900 hover:text-cstmclr-950 text-xl lg:text-2xl cursor-pointer ">
+      <div className="flex border-y-2 md:shadow-none shadow-md border-cstmclr-300 h-12 items-center relative bg-slate-50">
+        <div className="font-extrabold px-4 md:px-8 text-cstmclr-900 hover:text-cstmclr-950 text-xl lg:text-2xl cursor-pointer ">
           <Link href="/">My Portfolio</Link>
         </div>
-        <ul className="flex ml-auto gap-8 text-cstmclr-800 font-semibold">
-          <li>
-            <Link
-              className="text-cstmclr-950 font-extrabold border-b-2 border-cstmclr-950"
-              href="/"
-            >
-              Home
-            </Link>
-          </li>
-          <li className="hover:text-cstmclr-950 hover:font-bold">
-            <Link href="projects">Our Projects</Link>
-          </li>
-          <li className="hover:text-cstmclr-950 hover:font-bold">
-            <Link href="#services">Services</Link>
-          </li>
-          <li className="hover:text-cstmclr-950 hover:font-bold">
-            <Link href="#resume">Resume</Link>
-          </li>
-          <li className="hover:text-cstmclr-950 hover:font-bold">
-            <Link href="aboutMe">About Us</Link>
-          </li>
-        </ul>
-        <button
-          type="button"
-          className="bg-cstmclr-800 ml-8 mr-2 hover:bg-cstmclr-700 font-semibold text-cstmclr-100 h-10 w-28 rounded"
-        >
-          <a href="/contact">Contact</a>
-        </button>
+
+        <div className="hidden md:items-center ml-auto md:flex">
+          <NavItem />
+        </div>
+
+        {!togglebtn ? (
+          <button className="ml-auto md:hidden mr-4">
+            <FaBars
+              onClick={() => setTogglebtn(true)}
+              size={24}
+              className="text-cstmclr-400 hover:text-cstmclr-700"
+            />
+          </button>
+        ) : null}
+
+        {togglebtn ? (
+          <div
+            className="h-[100vh] w-[14rem] py-8 px-12  md:hidden top-0 right-0 z-50 absolute border
+          bg-gray-400 rounded-t-md bg-clip-padding backdrop-filter
+            backdrop-blur-sm bg-opacity-10 border-cstmclr-300 shadow-lg"
+          >
+            <div className="relative h-full">
+              <FaXmark
+                onClick={() => setTogglebtn(false)}
+                size={24}
+                className="absolute text-cstmclr-400 hover:text-cstmclr-700 cursor-pointer -right-8"
+              />
+              <NavItem />
+            </div>
+          </div>
+        ) : null}
       </div>
     </nav>
   );
