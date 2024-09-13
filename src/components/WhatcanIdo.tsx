@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const WhatcanIdo = () => {
   return (
-    <div className="w-full lg:h-fit h-[95vh]">
+    <div className="w-full h-fit ">
       <div className="md:m-8 m-4 md:px-8 lg:flex-row flex-col items-center flex">
         <div className="lg:max-w-[55vw] md:w-full  lg:pl-0 xl:py-20 lg:py-16 pt-20 gap-8 flex flex-col lg:h-fit md:h-[100vh] ">
           <h1 className="text-3xl hover:text-cstmclr-950 text-cstmclr-800 font-extrabold">

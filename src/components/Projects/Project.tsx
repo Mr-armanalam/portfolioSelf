@@ -14,7 +14,7 @@ const Project = ({
   link:Url,
 }) => {
   return (
-    <section className="border min-w-[24rem] bg-white relative flex-1 rounded-lg shadow-md border-cstmclr-300/10 h-auto ">
+    <section className="border min-w-[20rem] lg:min-w-[24rem] bg-white relative flex-1 rounded-lg shadow-md border-cstmclr-300/10 h-auto ">
       <Link href={link}>
         <div className="h-[12rem] box-border  border">
           <img
