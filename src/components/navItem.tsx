@@ -16,7 +16,7 @@ const NavItem = () => {
         <li className="hover:text-cstmclr-950 hover:font-bold">
           <Link href="projects">Our Projects</Link>
         </li>
-        <li className="hover:text-cstmclr-950 hover:font-bold">
+        <li className="hover:text-cstmclr-950 hover:font-bold md:hidden lg:block">
           <Link href="#services">Services</Link>
         </li>
         <li className="hover:text-cstmclr-950 hover:font-bold">

@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const WhatcanIdo = () => {
   return (
-    <div className="w-full h-[95vh]">
-      <div className="m-8 items-center flex">
-        <div className="max-w-[55vw] pl-8 pt-20 gap-8 flex flex-col h-[100vh] ">
+    <div className="w-full lg:h-fit h-[95vh]">
+      <div className="md:m-8 m-4 md:px-8 lg:flex-row flex-col items-center flex">
+        <div className="lg:max-w-[55vw] md:w-full  lg:pl-0 xl:py-20 lg:py-16 pt-20 gap-8 flex flex-col lg:h-fit md:h-[100vh] ">
           <h1 className="text-3xl hover:text-cstmclr-950 text-cstmclr-800 font-extrabold">
             {" "}
             Intern with Nullclass{" "}
@@ -48,8 +48,8 @@ const WhatcanIdo = () => {
             </p>
           </div>
         </div>
-        <div className="max-w-[45vw] mt-20 gap-12 flex flex-col">
-          <div className="border h-[10rem] w-max-full pl-8 ml-20  flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-[27rem]">
+        <div className="lg:max-w-[45vw] mb-12 lg:mb-0 w-full mt-20 xl:gap-12 gap-4 lg:gap-12 flex lg:items-end flex-col md:flex-row lg:flex-col">
+          <div className="border h-[10rem] max-w-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
             <p className="text-cstmclr-800  font-bold p-2 hover:text-cstmclr-950 ml-auto text-sm">
               Jun 2024 - 2 months{" "}
             </p>
@@ -69,7 +69,7 @@ const WhatcanIdo = () => {
               </button>
             </div>
           </div>
-          <div className=" border h-[10rem] w-max-full pl-8 ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-[27rem]">
+          <div className=" border h-[10rem] w-max-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
             <p className="text-cstmclr-800  font-bold p-2 hover:text-cstmclr-950 ml-auto text-sm">
               Jun 2024 - 2 months{" "}
             </p>

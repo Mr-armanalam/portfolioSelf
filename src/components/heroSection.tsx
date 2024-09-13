@@ -8,16 +8,16 @@ import selfPicture from '../assets/armanhd3.jpeg';
 
 const heroSection = () => {
   return (
-    <section className="pt-14 w-full  px-8">
+    <section className="pt-14 w-full px-2 md:px-8">
       <div
-        className="h-[60vh] mt-4 border-cstmclr-200 shadow
-       rounded-lg border bg-white flex
+        className="h-fit lg:items-center mt-4 text-center md:text-left  border-cstmclr-200 shadow
+       md:rounded-lg rounded-xl border bg-white flex md:flex-row flex-col
       "
       >
-        <div className="mt-10 ml-20 max-w-[55vw]">
+        <div className="mt-10 lg:my-auto xl:ml-20 lg:ml-12 md:ml-8 mx-4  w-fit md:max-w-[55vw]">
           <p className="text-4xl font-extrabold text-cstmclr-800">
             Hey, I'm Arman Alam{" "}
-            <span className="text-nowrap hover:text-blue-900">
+            <span className="md:text-nowrap hover:text-blue-900">
               Full-Stack Web Developer
             </span>
           </p>
@@ -30,7 +30,7 @@ const heroSection = () => {
             foundation in Next.js.{" "}
           </p>
 
-          <div className="flex items-center gap-2 mt-10">
+          <div className="flex md:mb-4 lg:mb-0 justify-center md:justify-start items-center gap-2 mt-10">
             <button className="bg-cstmclr-700 hover:bg-cstmclr-950 px-4 mr-10 text-cstmclr-200 p-2 rounded font-bold">
               Reach Out
             </button>
@@ -44,11 +44,11 @@ const heroSection = () => {
           </div>
         </div>
 
-        <div className="flex justify-center mx-auto mt-10  max-w-[45vw] h-[50vh]">
-          <div className="border text-center border-cstmclr-600 bg-cover relative w-[16rem] h-[16rem] rounded-full ">
+        <div className="md:flex justify-center mb-12 md:mb-0 mx-auto mt-10 md:my-auto w-fit md:max-w-[45vw] md:h-[50vh]">
+          <div className="border text-center md:my-auto border-cstmclr-600 bg-cover relative xl:w-[20rem] xl:h-[20rem] lg:h-[16rem] lg:w-[16rem] md:h-[10rem] md:w-[10rem] w-[14rem] h-[14rem] rounded-full ">
             <img
               src={selfPicture.src}
-              className=" rounded-full h-[16rem] w-[16rem]"
+              className=" rounded-full xl:w-[20rem] xl:h-[20rem] lg:h-[16rem] lg:w-[16rem] md:h-[10rem] md:w-[10rem] h-[14rem] w-[14rem]"
               alt="my pic "
             />
           </div>
@@ -59,3 +59,4 @@ const heroSection = () => {
 }
 
 export default heroSection
+

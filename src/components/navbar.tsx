@@ -9,7 +9,7 @@ const navbar = () => {
   const [togglebtn, setTogglebtn] = useState(false);
   return (
     <nav className="absolute left-0 right-0 w-full">
-      <div className="flex border-y-2 md:shadow-none shadow-md border-cstmclr-300 h-12 items-center relative bg-slate-50">
+      <div className="flex border-y-2 md:shadow-none shadow-md border-cstmclr-300 h-16 md:12 items-center relative bg-slate-50">
         <div className="font-extrabold px-4 md:px-8 text-cstmclr-900 hover:text-cstmclr-950 text-xl lg:text-2xl cursor-pointer ">
           <Link href="/">My Portfolio</Link>
         </div>
@@ -33,6 +33,7 @@ const navbar = () => {
             className="h-[100vh] w-[14rem] py-8 px-12  md:hidden top-0 right-0 z-50 absolute border
           bg-gray-400 rounded-t-md bg-clip-padding backdrop-filter
             backdrop-blur-sm bg-opacity-10 border-cstmclr-300 shadow-lg"
+            onClick={() => setTogglebtn(false)}
           >
             <div className="relative h-full">
               <FaXmark
