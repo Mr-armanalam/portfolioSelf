@@ -5,7 +5,7 @@ const Skills = () => {
   return (
     <section className="lg:px-12 px-4 my-12 h-fit">
       <div className="my-8">
-        <p className="text-3xl font-extrabold text-cstmclr-800 hover:text-blue-900">
+        <p className="text-3xl font-extrabold text-cstmclr-900 hover:text-blue-900">
           My Skills
         </p>
         <p className="text-cstmclr-500 font-medium">

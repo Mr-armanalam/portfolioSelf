@@ -8,7 +8,7 @@ const WhatcanIdo = () => {
     <div className="w-full h-fit ">
       <div className="md:m-8 m-4 md:px-8 xl:px-4 lg:flex-row relative flex-col items-center flex">
         <div className="lg:max-w-[55vw] xl:max-w-[60vw] md:w-full  lg:pl-0 lg:pt-16 lg:pb-8 pt-20  flex flex-col lg:h-fit md:h-[100vh] ">
-          <h1 className="text-3xl hover:text-blue-900 text-cstmclr-800 font-extrabold">
+          <h1 className="text-3xl hover:text-blue-900 text-cstmclr-900 font-extrabold">
             Experience
             {/* Intern with Nullclass{" "} */}
           </h1>
