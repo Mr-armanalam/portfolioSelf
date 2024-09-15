@@ -45,7 +45,7 @@ const NavItem = () => {
         type="button"
         className="bg-cstmclr-800 md:mt-0 md:relative absolute bottom-0 md:ml-8 md:mr-2 hover:bg-cstmclr-700 font-semibold text-cstmclr-100 h-10 w-28 rounded"
       >
-        <a href="/contact">Contact</a>
+        <Link href="contact">Contact</Link>
       </button>
     </>
   );
