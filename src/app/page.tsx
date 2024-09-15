@@ -1,4 +1,5 @@
 
+import Footer from "@/components/Footer";
 import HeroSection from "@/components/heroSection";
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/skills/Skills";
@@ -11,7 +12,7 @@ export default function Home() {
     <HeroSection />
     <WhatcanIdo />
     <Projects /> 
-    <Skills />  
+    <Skills />
     </>
   );
 }

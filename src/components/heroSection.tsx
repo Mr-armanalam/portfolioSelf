@@ -16,14 +16,14 @@ const heroSection = () => {
       "
       >
         <div className="mt-10 lg:my-auto xl:ml-20 lg:ml-12 md:ml-8 mx-4  w-fit md:max-w-[55vw]">
-          <p className="text-4xl font-extrabold text-cstmclr-800">
+          <p className="md:text-4xl text-2xl font-extrabold text-cstmclr-800">
             Hey, I'm Arman Alam{" "}
             <span className="md:text-nowrap hover:text-blue-900">
               Full-Stack Web Developer
             </span>
           </p>
 
-          <p className="mt-8 text-cstmclr-500 ">
+          <p className="mt-8 md:text-base text-sm text-cstmclr-500 ">
             A passionate and dedicated developer with experienced in building
             dynamic and responsive web applications. My expertise lies in the{" "}
             <span className="font-bold hover:text-blue-900">MERN Stack</span>{" "}
@@ -32,7 +32,7 @@ const heroSection = () => {
           </p>
 
           <div className="flex md:mb-4 lg:mb-0 justify-center md:justify-start items-center gap-2 mt-10">
-            <button className="bg-cstmclr-700 hover:bg-cstmclr-950 px-4 mr-10 text-cstmclr-200 p-2 rounded font-bold">
+            <button className="bg-cstmclr-700 md:text-base text-sm hover:bg-cstmclr-950 px-4 mr-10 text-cstmclr-200 p-2 rounded font-bold">
               Reach Out
             </button>
             <div className="text-cstmclr-700 items-center flex gap-1 cursor-pointer">

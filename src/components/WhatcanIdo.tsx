@@ -6,13 +6,13 @@ import { MdClass } from "react-icons/md";
 const WhatcanIdo = () => {
   return (
     <div className="w-full h-fit ">
-      <div className="md:m-8 m-4 md:px-8 xl:px-4 lg:flex-row relative flex-col items-center flex">
-        <div className="lg:max-w-[55vw] xl:max-w-[60vw] md:w-full  lg:pl-0 lg:pt-16 lg:pb-8 pt-20  flex flex-col lg:h-fit md:h-[100vh] ">
+      <div className="md:m-8 mx-4 md:my-4 md:px-8 xl:px-4 lg:flex-row relative flex-col items-center flex">
+        <div className="lg:max-w-[55vw] xl:max-w-[60vw] md:w-full  lg:pl-0 lg:pt-16 lg:pb-8 md:pt-20 pt-16 flex flex-col lg:h-fit md:h-[100vh] ">
           <h1 className="text-3xl hover:text-blue-900 text-cstmclr-900 font-extrabold">
             Experience
             {/* Intern with Nullclass{" "} */}
           </h1>
-          <p className="text-cstmclr-500 font-medium">
+          <p className="text-cstmclr-500 text-sm md:text-base font-medium">
             My some learning experience
           </p>
 
@@ -20,10 +20,10 @@ const WhatcanIdo = () => {
             <div>
               <p className="mt-8 hover:animate-bounce mb-2  hover:text-cstmclr-800 text-cstmclr-600 font-extrabold text-xl flex items-center gap-4">
                 <MdClass />
-                <h1 className="text-2xl  ">Intern with Nullclass </h1>
+                <h1 className="text-2xl ">Intern with Nullclass </h1>
               </p>
 
-              <div className="text-cstmclr-500 flex gap-2 flex-col font-medium text-base">
+              <div className="text-cstmclr-500 text-base flex gap-2 flex-col font-medium ">
                 <p>
                   Strengthen our skills in ReactJS, Understand Redux for state
                   management, including Redux Thunk for handling asynchronous
@@ -51,7 +51,7 @@ const WhatcanIdo = () => {
               </p>
               
 
-              <div className="text-cstmclr-500 flex gap-2 flex-col font-medium">
+              <div className="text-cstmclr-500 text-base flex gap-2 flex-col font-medium">
                 <p>
                   Created a user-friendly chat interface for interacting with
                   the Gemini model .

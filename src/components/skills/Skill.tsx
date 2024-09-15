@@ -31,7 +31,7 @@ const Skill = () => {
               </p>
               <ul
                 key={i + 2}
-                className="pr-4 pl-8 list-disc py-2 flex flex-col gap-2 font-bold text-sm text-cstmclr-400 hover:text-cstmclr-500"
+                className="pr-4  text-xs pl-8 list-disc py-2 flex flex-col gap-2 font-bold md:text-sm text-cstmclr-400 hover:text-cstmclr-500"
               >
                 <li>{projectData[i].discription1}</li>
                 <li>{projectData[i].discription2}</li>

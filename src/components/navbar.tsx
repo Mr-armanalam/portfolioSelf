@@ -8,7 +8,7 @@ import { FaXmark } from "react-icons/fa6";
 const navbar = () => {
   const [togglebtn, setTogglebtn] = useState(false);
   return (
-    <nav className="absolute left-0 right-0 w-full">
+    <nav className="absolute z-50 left-0 right-0 w-full">
       <div className="flex border-y-2 md:shadow-none shadow-md border-cstmclr-300 h-16 md:12 items-center relative bg-slate-50">
         <div className="font-extrabold px-4 md:px-8 text-cstmclr-900 hover:text-cstmclr-950 text-xl lg:text-2xl cursor-pointer ">
           <Link href="/">My Portfolio</Link>

@@ -25,13 +25,13 @@ export const projectdata = [
   },
   {
     cardImage: Chatgemeni,
-    projectName: "Chatgemeni Clone",
+    projectName: "AI Chatgemeni",
     projectDescription: "",
     link: "https://chatgemeni.netlify.app/",
   },
   {
     cardImage: CodeAssistant,
-    projectName: "Code Assistant",
+    projectName: "AI Code Assistant",
     projectDescription: "",
     link: "https://aicodeassistant.netlify.app/",
   },
