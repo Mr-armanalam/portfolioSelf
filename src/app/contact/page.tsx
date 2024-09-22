@@ -1,22 +1,37 @@
 'use client'
-import axios from 'axios';
-import React, { useState} from 'react'
+//import axios from 'axios';
+import React, { useState} from 'react';
+import {useRouter} from 'next/navigation'
 
 const page = () => {
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [description, setDescription] = useState('');
+    const [submit, setSubmit]= useState(false);
+    const router = useRouter();
     // console.log(username, email, description);
 
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
+        setSubmit(true);
         try{
-            const response = await axios.post("/api/contact", {
-                username,
-                email,
-                description
-            }).then((response)=> {console.log(response)});
-            alert("Thank you for your feedback !")
+          // const response = await axios.post("/api/contact", {
+          //     username,
+          //     email,
+          //     description
+          // }).then((response)=> {console.log(response)});
+          // alert("Thank you for your feedback !")
+          await fetch("api/contact", { method: "POST",body: JSON.stringify({
+               username:username, 
+               email:email, 
+               description:description 
+            }),
+          }).then((response) => {
+            console.log(response);
+          });
+           alert("Thank you for your valuable feedback ! ❤️❤️");
+           setSubmit(false);
+          router.push('/');
         }catch(error) {
             console.log(error);
         }
@@ -37,6 +52,7 @@ const page = () => {
             value={username}
             onChange={(e) => {setUsername(e.target.value)}}
             className="w-full text-cstmclr-900 px-2 outline-none py-1 rounded border "
+            required
           />
           <label htmlFor="email">Email :</label>
           <input
@@ -46,6 +62,7 @@ const page = () => {
             value={email}
             onChange={(e) => {setEmail(e.target.value)}}
             className="w-full  text-cstmclr-900 px-2 outline-none py-1  rounded border"
+            required
           />
           <label htmlFor="description">Description</label>
           <textarea
@@ -55,9 +72,10 @@ const page = () => {
             onChange={(e) => {setDescription(e.target.value)}}
             className="w-full text-cstmclr-900 px-2 outline-none py-1  rounded border"
             rows={4}
+            required
           ></textarea>
           <button type="submit" className="absolute hover:text-lg bottom-4 right-8">
-            Submit
+            {submit? "Sending...":"Submit"}
           </button>
         </form>
       </div>
