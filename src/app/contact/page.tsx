@@ -52,6 +52,7 @@ const page = () => {
             value={username}
             onChange={(e) => {setUsername(e.target.value)}}
             className="w-full text-cstmclr-900 px-2 outline-none py-1 rounded border "
+            placeholder='write your name'
             required
           />
           <label htmlFor="email">Email :</label>
@@ -62,6 +63,7 @@ const page = () => {
             value={email}
             onChange={(e) => {setEmail(e.target.value)}}
             className="w-full  text-cstmclr-900 px-2 outline-none py-1  rounded border"
+            placeholder='your email'
             required
           />
           <label htmlFor="description">Description</label>
@@ -72,6 +74,7 @@ const page = () => {
             onChange={(e) => {setDescription(e.target.value)}}
             className="w-full text-cstmclr-900 px-2 outline-none py-1  rounded border"
             rows={4}
+            placeholder='write a short description'
             required
           ></textarea>
           <button type="submit" className="absolute hover:text-lg bottom-4 right-8">
