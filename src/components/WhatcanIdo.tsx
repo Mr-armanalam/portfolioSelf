@@ -18,10 +18,10 @@ const WhatcanIdo = () => {
 
           <div className=" flex flex-col gap-8">
             <div>
-              <p className="mt-8 hover:animate-bounce mb-2  hover:text-cstmclr-800 text-cstmclr-600 font-extrabold text-xl flex items-center gap-4">
+              <h1 className="mt-8  text-cstmclr-600 font-extrabold text-xl flex items-center gap-4 hover:animate-bounce mb-2  hover:text-cstmclr-800">
                 <MdClass />
-                <h1 className="text-2xl ">Intern with Nullclass </h1>
-              </p>
+                <p className="text-2xl ">Intern with Nullclass </p>
+              </h1>
 
               <div className="text-cstmclr-500 text-base flex gap-2 flex-col font-medium ">
                 <p>
@@ -45,10 +45,10 @@ const WhatcanIdo = () => {
             </div>
 
             <div>
-              <p className="hover:animate-bounce mb-2  hover:text-cstmclr-800 text-cstmclr-600 font-extrabold text-xl flex items-center gap-4">
+              <h1 className="hover:animate-bounce mb-2  hover:text-cstmclr-800 text-cstmclr-600 font-extrabold text-xl flex items-center gap-4">
                 <MdClass />
-                <h1 className="text-2xl  "> Intern with Xzect OSPE </h1>
-              </p>
+                <p className="text-2xl  "> Intern with Xzect OSPE </p>
+              </h1>
               
 
               <div className="text-cstmclr-500 text-base flex gap-2 flex-col font-medium">

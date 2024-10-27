@@ -39,8 +39,8 @@ const page = () => {
 
 
   return (
-    <section className="w-full px-4 pt-28 md:px-8 h-screen">
-      <div className="mx-auto relative px-4 max-w-[60rem] lg:h-[60vh] h-[72vh]
+    <section className="w-full px-4 pt-28 md:px-8 h-[93vh]">
+      <div className="mx-auto relative px-4 max-w-[60rem] xl:w-[90vw]  xl:mt-12 lg:h-[60vh] h-[72vh]
       lg:px-28 md:px-12 justify-center flex items-center bg-cstmclr-900 rounded-lg border
     border-cstmclr-200">
         <form onSubmit={handleSubmit} className="text-white gap-2 w-full flex flex-col font-semibold text-base">
@@ -51,8 +51,8 @@ const page = () => {
             name='username'
             value={username}
             onChange={(e) => {setUsername(e.target.value)}}
-            className="w-full text-cstmclr-900 px-2 outline-none py-1 rounded border "
-            placeholder='write your name'
+            className="w-full text-sm text-cstmclr-900 px-2 outline-none py-1 rounded border "
+            placeholder='please write your name'
             required
           />
           <label htmlFor="email">Email :</label>
@@ -62,8 +62,8 @@ const page = () => {
             id="email"
             value={email}
             onChange={(e) => {setEmail(e.target.value)}}
-            className="w-full  text-cstmclr-900 px-2 outline-none py-1  rounded border"
-            placeholder='your email'
+            className="w-full text-sm text-cstmclr-900 px-2 outline-none py-1  rounded border"
+            placeholder='please write your email'
             required
           />
           <label htmlFor="description">Description</label>
@@ -72,12 +72,12 @@ const page = () => {
             id="description"
             value={description}
             onChange={(e) => {setDescription(e.target.value)}}
-            className="w-full text-cstmclr-900 px-2 outline-none py-1  rounded border"
+            className="w-full text-sm text-cstmclr-900 px-2 outline-none py-1  rounded border"
             rows={4}
             placeholder='write a short description'
             required
           ></textarea>
-          <button type="submit" className="absolute hover:text-lg bottom-4 right-8">
+          <button type="submit" className="absolute hover:text-lg bottom-6 right-8">
             {submit? "Sending...":"Submit"}
           </button>
         </form>
