@@ -6,12 +6,13 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { CgArrowLongRight } from "react-icons/cg";
 import selfPicture from '../assets/armanhd3.jpeg';
 import Link from 'next/link';
+import "./herosection.css"
 
 const heroSection = () => {
   return (
-    <section className="pt-14 lg:pt-16 w-full px-2 md:px-8">
+    <section className="pt-14 lg:pt-16  w-full px-2 md:px-8">
       <div
-        className="h-fit lg:items-center xl:py-2 mt-4 text-center md:text-left border-cstmclr-200 shadow
+        className="h-fit animated-box1 lg:items-center xl:py-2 mt-4 text-center md:text-left border-cstmclr-200 shadow
        md:rounded-lg rounded-xl border bg-white flex md:flex-row flex-col
       "
       >
