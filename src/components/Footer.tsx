@@ -3,9 +3,9 @@ import { IoGlobeOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="bg-inherit h-12 mb-1 border border-cstmclr-400 items-center flex justify-center">
+    <footer className="bg-inherit h-12 mb-1 border-y border-cstmclr-400 items-center flex justify-center">
       <div className=" text-cstmclr-700 gap-2 flex items-center">
-        <IoGlobeOutline />
+        <IoGlobeOutline className='animate-pulse'/>
         <p className="text-xs md:text-sm font-medium">
           A Portfolio website to introduce myself
         </p>

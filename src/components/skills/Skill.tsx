@@ -13,11 +13,11 @@ const Skill = () => {
   const [iconIndex, setIconIndex]=useState([0,3,6,1,9,12]);
 
   return (
-    <div className="lg:grid flex flex-col  md:flex-row md:flex-wrap auto-rows-[192px] grid-cols-3 gap-4">
+    <div className="lg:grid flex flex-col md:flex-row md:flex-wrap auto-rows-[192px] grid-cols-3 gap-4">
       {[...Array(7)].map((_, i) => (
         <div
           key={i}
-          className={`row-span-1 md:flex-1 lg:overflow-auto flex flex-col rounded-xl border-2 border-cstmclr-400/10 shadow-md bg-white px-4 pt-4 ${
+          className={`row-span-1 md:flex-1 lg:overflow-auto flex animated-box flex-col rounded-xl border-2 border-cstmclr-400/10 shadow-md bg-white px-4 pt-4 ${
             i === 3 || i === 6 ? "col-span-2 md:min-w-full" : ""
           }`}
         >
