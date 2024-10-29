@@ -12,13 +12,13 @@ const page = () => {
     
       <section onDoubleClick={()=> setIspopout(false)} className='pt-14 lg:pt-16 relative h-auto w-full px-2 md:px-8'>
 
-        <button onClick={()=>setIspopout(true)} className='absolute right-36 flex animate-pulse items-center top-40 font-bold text-cstmclr-800 '>
+        <button onClick={()=>setIspopout(true)} className='absolute right-4 top-24 md:right-24 lg:right-36 flex animate-pulse items-center md:top-28 lg:top-40 font-bold text-cstmclr-800 '>
           <GrProjects  size={13} className='mr-2 font-bold'/> Know More...        
         </button>
 
-        <div className='pt-32 ml-20'>
-          <h1 className=' font font-semibold text-6xl text-cstmclr-900'>About Us</h1>
-          <div className='flex flex-col gap-4 text-cstmclr-700 pl-16 mb-12 pr-24 text-justify py-12'>
+        <div className='lg:pt-32 pt-20 md:pt-20 lg:ml-20'>
+          <h1 className=' font-semibold text-3xl md:text-4xl lg:text-6xl text-cstmclr-900'>About Us</h1>
+          <div className='flex flex-col gap-4 text-cstmclr-700 pl-6 text-xs font-mono md:text-base md:font-sans md:pl-16 mb-12 pr-6 md:pr-16 lg:pr-24 text-justify py-8 md:py-12'>
           <p>
             <span className='font-bold'>Welcome!</span> I'm a dedicated and versatile full stack web developer with <span className='font-semibold'>two years of experience</span> in building impactful
             digital solutions from concept to completion. With a strong foundation in both front-end and back-end development,

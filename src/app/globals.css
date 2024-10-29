@@ -79,11 +79,13 @@
   }
 }
 
-.animated-box1 {
-  background: #fff;
-  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
-  background-size: 200% 100%;
-  animation: 3s shine linear infinite;
+@media (min-width: 768px) {
+  .animated-box1 {
+    background: #fff;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    background-size: 200% 100%;
+    animation: 3s shine linear infinite;
+  } 
 }
 
 .animated-box:hover {
