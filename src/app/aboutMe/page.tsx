@@ -1,9 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { GrProjects } from "react-icons/gr";
-import Popout from '@/components/popout';
-import About_c from '@/components/about_c';
-
+import Popout from '@/components/about/popout';
 
 
 const page = () => {

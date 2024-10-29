@@ -23,7 +23,7 @@ const NavItem = () => {
         </li>
         <li className="hover:text-cstmclr-950 hover:font-bold md:hidden lg:block">
           <Link
-            href="#services"
+            href="services"
             className="focus:border-b-2  border-cstmclr-950"
           >
             Services
