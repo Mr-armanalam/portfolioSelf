@@ -1,7 +1,7 @@
 'use client'
-//import axios from 'axios';
 import React, { useState} from 'react';
 import {useRouter} from 'next/navigation'
+import showAlertDialog from '@/components/alert';
 
 const page = () => {
     const [username, setUsername] = useState('');
@@ -29,7 +29,9 @@ const page = () => {
           }).then((response) => {
             console.log(response);
           });
-           alert("Thank you for your valuable feedback ! ❤️❤️");
+           //alert("Thank you for your valuable feedback ! ❤️❤️");
+           const alrt = ()=>{ return (showAlertDialog("Thank you for your valuable feedback!", )); };
+           alrt();
            setSubmit(false);
           router.push('/');
         }catch(error) {
