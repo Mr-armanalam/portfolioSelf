@@ -6,7 +6,6 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { CgArrowLongRight } from "react-icons/cg";
 import selfPicture from '../assets/armanhd3.jpeg';
 import Link from 'next/link';
-import "./herosection.css"
 
 const heroSection = () => {
   return (

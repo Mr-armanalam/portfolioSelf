@@ -72,3 +72,23 @@
     @apply bg-background text-foreground;
     }
 }
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.animated-box1 {
+  background: #fff;
+  background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+  background-size: 200% 100%;
+  animation: 3s shine linear infinite;
+}
+
+.animated-box:hover {
+  background: #fff;
+  background: linear-gradient(110deg, #fff 8%, #f3f4f6 18%, #fff 33%);
+  background-size: 200% 100%;
+  animation: 3.5s shine linear infinite;
+}

@@ -10,7 +10,7 @@ const WhatcanIdo = () => {
         <div className="lg:max-w-[55vw] xl:max-w-[60vw] md:w-full  lg:pl-0 lg:pt-16 lg:pb-8 md:pt-20 pt-16 flex flex-col lg:h-fit md:h-[100vh] ">
           <h1 className="text-3xl hover:text-blue-900 text-cstmclr-900 font-extrabold">
             Experience
-            {/* Intern with Nullclass{" "} */}
+            
           </h1>
           <p className="text-cstmclr-500 text-sm md:text-base font-medium">
             My some learning experience

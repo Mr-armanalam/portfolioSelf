@@ -1,21 +1,14 @@
 'use client'
 import React, { useState } from 'react'
 import { GrProjects } from "react-icons/gr";
-import Popout from '@/components/popout';
-import About_c from '@/components/about_c';
 
-
-
-const page = () => {
-  const [ispopout, setIspopout] = useState(false);
+const About_c = () => {
+    const [ispopout, setIspopout] = useState(false);
   return (
-    <>
-    {ispopout ? <Popout />:null}
-    
-      <section onDoubleClick={()=> setIspopout(false)} className='pt-14 lg:pt-16 relative h-auto w-full px-2 md:px-8'>
+    <section className='pt-14 lg:pt-16 relative h-auto w-full px-2 md:px-8'>
 
-        <button onClick={()=>setIspopout(true)} className='absolute right-36 flex animate-pulse items-center top-40 font-bold text-cstmclr-800 '>
-          <GrProjects  size={13} className='mr-2 font-bold'/> Know More...        
+        <button onClick={()=>setIspopout(true)} className='absolute right-36 flex items-center top-40 font-bold text-cstmclr-800 '>
+          <GrProjects size={13} className='mr-2 font-bold'/> Know More...        
         </button>
 
         <div className='pt-32 ml-20'>
@@ -53,10 +46,7 @@ const page = () => {
         </div>
 
       </section>
-
-
-    </> 
   )
 }
 
-export default page
+export default About_c
