@@ -18,7 +18,7 @@ const page = () => {
                     {/* <p className='bg-gradient-to-r from-white to-black bg-clip-text text-transparent pt-6 font-sans font-bold text-base'>{services[i]?.serviceDescription}</p>                */}
                   </h1>
                 </div>
-                <h1 className='text-sm text-cstmclr-600 font-semibold p-2'>{services[i].serviceName}</h1>
+                <h2 className='text-sm text-cstmclr-600 font-semibold p-2'>{services[i].serviceName}</h2>
               </div>
             </div>
           ))}         
