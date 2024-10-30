@@ -98,7 +98,7 @@
 
 @keyframes service_glass {
   from {
-    z-index: -125;
+    z-index: -250;
     height: 0%;
   }
   to {
