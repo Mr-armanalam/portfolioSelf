@@ -23,6 +23,7 @@ const Project = ({
           <img
             className="h-[12rem] w-[100%] rounded-t-lg"
             src={cardImage.src}
+            alt= "project"
           />
         </div>
       </Link>
