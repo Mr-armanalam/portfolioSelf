@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ["Arman Alam", "Arman Alam Portfolio", "Arman Alam Motihari", "Mrarmanalam","armanalam_motihari", 
     "Arman Alam Web Developer", "Arman Alam Full Stack Developer", "Arman Alam React.js Developer", 
     "Arman Alam Node.js Developer", "Experienced Web Developer", "Experienced Full Stack Web Developer", 
-    "Projects", "My Services", "Contact Us", "clone", "chat", "youtube", "experience" ],
+    "Projects", "Services", "Contact Us", "clone", "chat", "youtube", "experience", "My Skills", "Github Repo", "Resume", "About Us", "Contact" ],
   authors: { name: "Arman Alam", url: "https://github.com/Mr-armanalam" },
   icons: "/armanhd3.png",
 };
