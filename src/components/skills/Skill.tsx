@@ -6,8 +6,6 @@ const {
   FaBootstrap, FaGitSquare, FaHtml5, FaJava, FaNodeJs, FaReact, SiExpress, SiMongodb, SiNextdotjs,
   MdDatasetLinked, GrMysql, TbBrandThreejs, IoLogoJavascript, TiCss3, RiTailwindCssLine} = skillsIcon;
 
-
-
 const Skill = () => {
 
   const [iconIndex, setIconIndex]=useState([0,3,6,1,9,12]);

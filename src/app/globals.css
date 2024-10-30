@@ -94,3 +94,24 @@
   background-size: 200% 100%;
   animation: 3.5s shine linear infinite;
 }
+
+@keyframes service_glass {
+  from {
+    z-index: -125;
+    height: 0%;
+  }
+  to {
+    height: 80%;
+    z-index: 50;
+  }
+}
+
+.trnstion:hover{
+  .maketrnstion {
+    z-index: 100;
+    height: 80%;
+    animation: service_glass 0.5s ease-out;
+  }
+}
+
+
