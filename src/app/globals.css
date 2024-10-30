@@ -4,6 +4,7 @@
 
 :root {
     background-color:#f8fafc;
+    /* --background: 'linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913)'; */
 }
 * {
     padding: 0%;
@@ -102,7 +103,7 @@
   }
   to {
     height: 80%;
-    z-index: 50;
+    z-index: 90;
   }
 }
 
