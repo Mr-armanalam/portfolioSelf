@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     "Projects", "Services", "Contact Us", "clone", "chat", "youtube", "experience", "My Skills", "Github Repo", "Resume", "About Us", "Contact" ],
   authors: { name: "Arman Alam", url: "https://github.com/Mr-armanalam" },
   icons: "/armanhd3.png",
+  openGraph : {
+      type: 'website',
+      url: 'https://armanalam.vercel.app/resume',
+      title: 'Resume',
+      description: 'Professional Resume showcasing my expertise in Web Programming '
+  }
 };
 
 export default function RootLayout({
