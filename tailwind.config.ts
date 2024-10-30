@@ -21,8 +21,11 @@ const config: Config = {
   				'700': '#525252',
   				'800': '#464646',
   				'900': '#3d3d3d',
-  				'950': '#292929'
+  				'950': '#292929',
+				
   			},
+			//background: 'linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913)',
+			
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

@@ -12,8 +12,8 @@ const page = () => {
               <div className='max-w-fit relative h-[17rem] trnstion'>
                 <Image className='h-[86%] rounded-t-lg' src={services[i]?.cardImage} alt='services' ></Image>
                 <div className='absolute p-8 bottom-0 left-0 rounded-lg maketrnstion -z-50 bg w-full bg-gray-100 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-5 '>
-                  <h1 className='text-center text-black text-border pt-4 font-sans font-extrabold text-xl'>{services[i]?.serviceName} 
-                    <p className='text-zinc-700 pt-6 font-sans font-bold text-base'>{services[i]?.serviceDescription}</p>               
+                  <h1 className='text-center text-cstmclr-50 pt-4 font-sans font-extrabold text-xl'>{services[i]?.serviceName} 
+                    <p className='text-white pt-6 font-sans font-bold text-base'>{services[i]?.serviceDescription}</p>               
                   </h1>
                 </div>
                 <h1 className='text-sm text-cstmclr-600 font-semibold p-2'>{services[i].serviceName}</h1>
