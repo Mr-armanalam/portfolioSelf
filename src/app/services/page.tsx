@@ -6,6 +6,7 @@ const page = () => {
   return (
     <section className='w-[100vw] h-auto '>
       <div className='h-auto pt-16 w-auto '>
+        {/* <h1 className='mt-16 mb-24 bg-gradient-to-r from-black to-white bg-clip-text text-transparent font-sans text-center  font-bold text-8xl'>My Services</h1> */}
         <div className='flex md:mt-8 md:p-0 p-2 md:m-12 gap-4 md:gap-8 flex-wrap'>
           {[...Array(6)].map((_,i)=>(
             <div key={i} className='border min-w-[22rem] md:min-w-96 max-w-md h-[17rem] flex-1 rounded-lg shadow-md hover:shadow-cstmclr-300 border-cstmclr-200 '>

@@ -1,10 +1,8 @@
 import fullstack from "./full-stack.webp";
-import backend from "./backend.jpg";
 import api from "./api.jpg";
 import uiux from "./uiux-consult.jpg";
 import frontend1 from "./frontend1.webp";
 import maintenance from "./maintenance.jpg";
-import maintenance1 from './maintenance1.png'
 import backend1 from "./backend1.png";
 
 export const services = [
