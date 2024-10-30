@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Arman Alam | Full Stack Web Developer",
-  description: "My experience includes working on front-end and back-end technologies, creating responsive web applications. I'm proficient in languages such as JavaScript, HTML, CSS, Next.js, React.js, Node.js, MongoDB, MySQL",
+  description: "My experience includes working on front-end and back-end technologies, creating responsive web applications.",
   keywords: ["Arman Alam", "Arman Alam Portfolio", "Arman Alam Motihari", "Mrarmanalam","armanalam_motihari", 
     "Arman Alam Web Developer", "Arman Alam Full Stack Developer", "Arman Alam React.js Developer", 
     "Arman Alam Node.js Developer", "Experienced Web Developer", "Experienced Full Stack Web Developer", 
