@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,31 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        {/* Add schema.org metadata */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Arman Alam",
+            url: "https://armanalam.vercel.app",
+            sameAs: [
+              "https://www.linkedin.com/in/mrarmanalam",
+              "https://github.com/Mr-armanalam",
+              "https://www.instagram.com/arman91174",
+            ],
+            worksFor: {
+              "@type": "OrganizationRole",
+              name: "Full Stack Web Developer",
+              organization: {
+                "@type": "Organization",
+                name: "Arman Alam",
+                url: "https://armanalam.vercel.app/",
+              },
+            },
+          })}
+        </script>
+      </Head>
       <body className={inter.className}>
         <Navbar />
         {children}

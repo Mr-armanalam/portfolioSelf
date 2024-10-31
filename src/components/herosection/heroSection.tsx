@@ -39,7 +39,7 @@ const heroSection = () => {
               <Link href={""}>
                 <CgArrowLongRight className=" hover:text-cstmclr-950 hover:text-lg" />
               </Link>
-              <Link href={"https://www.linkedin.com/in/arman-alam-39475b269/"}>
+              <Link href={"https://www.linkedin.com/in/mrarmanalam"}>
                 <FaLinkedin className=" hover:text-cstmclr-950 hover:text-lg" />
               </Link>
               <Link href={"https://www.instagram.com/arman91174"}>
