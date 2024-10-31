@@ -19,8 +19,9 @@ export const metadata: Metadata = {
       type: 'website',
       url: 'https://armanalam.vercel.app/resume',
       title: 'Resume',
-      description: 'Professional Resume showcasing my expertise in Web Programming '
-  }
+      description: 'Professional Resume showcasing my expertise in Web Programming ',
+      images: '/armanhd3.png',  
+  },
 };
 
 export default function RootLayout({
