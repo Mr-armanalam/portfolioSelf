@@ -7,7 +7,12 @@ import React from 'react'
 export const metadata: Metadata = {
   title: 'Arman Alam Resume',
   description: 'Welcome to my Resume page, a detailed snapshot of my professional journey and accomplishments.',
-  keywords: ["Resume", "Arman's Resume", "Arman Alam Resume"]
+  keywords: ["Resume", "Arman's Resume", "Arman Alam Resume"],
+  openGraph: {
+    type: "website",
+    url: "https://armanalam.vercel.app/resume",
+    images: "/resume_page.png",
+  },
 }
 
 const page = () => {

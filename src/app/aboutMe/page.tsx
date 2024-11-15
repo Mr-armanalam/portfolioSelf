@@ -17,8 +17,8 @@ const page = () => {
     
       <section onDoubleClick={()=> setIspopout(false)} className='pt-14 lg:pt-16 relative h-auto w-full px-2 md:px-8'>
 
-        <button onClick={()=>setIspopout(true)} className='absolute right-4 top-24 md:right-24 lg:right-36 flex animate-pulse items-center md:top-28 lg:top-40 font-bold text-cstmclr-800 '>
-          <GrProjects  size={13} className='mr-2 font-bold'/> Know More...        
+        <button onClick={()=>setIspopout(true)} className='absolute right-4 p-4 top-24 md:right-24 lg:right-36 flex text-cstmclr-50 bg-cstmclr-950 hover:bg-black border-2 border-cstmclr-400 items-center md:top-28 lg:top-40 font-bold rounded-md'>
+          <GrProjects  size={13} className='mr-2 font-bold'/> My Qualification...        
         </button>
 
         <div className='lg:pt-32 pt-20 md:pt-20 lg:ml-20'>

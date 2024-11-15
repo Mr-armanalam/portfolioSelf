@@ -6,8 +6,8 @@ import { MdClass } from "react-icons/md";
 const WhatcanIdo = () => {
   return (
     <div className="w-full h-fit ">
-      <div className="md:m-8 mx-4 md:my-4 md:px-8 xl:px-4 lg:flex-row relative flex-col items-center flex">
-        <div className="lg:max-w-[55vw] xl:max-w-[60vw] md:w-full  lg:pl-0 lg:pt-16 lg:pb-8 md:pt-20 pt-16 flex flex-col lg:h-fit md:h-[100vh] ">
+      <div className="md:m-6 max-sm:mx-4 md:my-4 xl:px-4 lg:flex-row relative flex-col items-center flex">
+        <div className="lg:max-w-[55vw] xl:max-w-[60vw] md:w-full lg:pl-0 lg:pt-16 lg:pb-8 md:pt-20 pt-16 flex flex-col lg:h-fit md:h-[100vh] ">
           <h1 className="text-3xl hover:text-blue-900 text-cstmclr-900 font-extrabold">
             Experience
             
@@ -69,7 +69,7 @@ const WhatcanIdo = () => {
           </div>
         </div>
         <div className="lg:max-w-[45vw] xl:max-w-[40vw] xl:mt-auto mb-12 lg:mb-0 w-full mt-20 xl:gap-12 gap-4 lg:gap-12 flex lg:items-end flex-col md:flex-row lg:flex-col">
-          <div className="border h-[10rem] max-w-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
+          <div className="border h-[10.5rem] max-w-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
             <p className="text-cstmclr-800  font-bold p-2 hover:text-cstmclr-950 ml-auto text-sm">
               Jun 2024 - 2 months{" "}
             </p>
@@ -89,7 +89,7 @@ const WhatcanIdo = () => {
               </button>
             </div>
           </div>
-          <div className=" border h-[10rem] w-max-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
+          <div className=" border h-[10.5rem] w-max-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
             <p className="text-cstmclr-800  font-bold p-2 hover:text-cstmclr-950 ml-auto text-sm">
               Jun 2024 - 2 months{" "}
             </p>

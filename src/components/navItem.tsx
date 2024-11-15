@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React from 'react'
+import React from 'react';
 
 const NavItem = () => {
   return (
@@ -43,7 +43,7 @@ const NavItem = () => {
 
       <button
         type="button"
-        className="bg-cstmclr-800 md:mt-0 md:relative absolute bottom-0 md:ml-8 md:mr-2 hover:bg-cstmclr-700 font-semibold text-cstmclr-100 h-10 w-28 rounded"
+        className="bg-cstmclr-950 md:mt-0 md:relative absolute bottom-0 md:ml-8 md:mr-2 hover:bg-black border-2 border-cstmclr-400 font-semibold text-cstmclr-100 h-10 w-28 rounded-lg"
       >
         <Link href="contact">Contact</Link>
       </button>

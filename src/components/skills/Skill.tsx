@@ -15,7 +15,7 @@ const Skill = () => {
       {[...Array(7)].map((_, i) => (
         <div
           key={i}
-          className={`row-span-1 md:flex-1 lg:overflow-auto flex animated-box flex-col rounded-xl border-2 border-cstmclr-400/10 shadow-md bg-white px-4 pt-4 ${
+          className={`row-span-1 md:flex-1 lg:overflow-auto flex animated-box flex-col rounded-xl border-2 shadow-inner border-cstmclr-200 bg-white px-4 pt-4 ${
             i === 3 || i === 6 ? "col-span-2 md:min-w-full" : ""
           }`}
         >

@@ -10,7 +10,7 @@ const navbar = () => {
   return (
     <nav className="absolute z-50 left-0 bg-custom-gray right-0 w-full">
       <div className="flex bg-custom-gradient border-y-[1px] border-cstmclr-100 h-16 md:12 items-center relative">
-        <div className="font-extrabold px-4 md:px-8 text-cstmclr-900 hover:text-cstmclr-950 text-xl lg:text-2xl cursor-pointer ">
+        <div className="font-extrabold px-4 md:px-8 text-cstmclr-950 hover:text-black text-xl lg:text-2xl cursor-pointer ">
           <Link href="/">My Portfolio</Link>
         </div>
 
