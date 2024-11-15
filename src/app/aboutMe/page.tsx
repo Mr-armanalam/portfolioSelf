@@ -2,8 +2,13 @@
 import React, { useState } from 'react'
 import { GrProjects } from "react-icons/gr";
 import Popout from '@/components/about/popout';
+import { Metadata } from 'next';
 
 
+// export const metadata: Metadata = {
+//   title: 'About Us | My Portfolio',
+//   keywords: ["About Us","Arman Alam"]
+// }
 const page = () => {
   const [ispopout, setIspopout] = useState(false);
   return (

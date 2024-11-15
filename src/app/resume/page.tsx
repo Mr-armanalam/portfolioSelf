@@ -1,7 +1,14 @@
+import { Metadata } from 'next';
 import React from 'react'
 
 // import resume from "./rersume.jpg"
 // import { FaDownload } from "react-icons/fa6";
+
+export const metadata: Metadata = {
+  title: 'Arman Alam Resume',
+  description: 'Welcome to my Resume page, a detailed snapshot of my professional journey and accomplishments.',
+  keywords: ["Resume", "Arman's Resume", "Arman Alam Resume"]
+}
 
 const page = () => {
   return (
@@ -15,7 +22,14 @@ const page = () => {
         src={resume.src}
       /> */}
 
-      <embed color='transparent' className="self-center h-[82vh] md:h-[100vh] w-full" src="/static/resumepdf.pdf" type="application/pdf" width={"100%"} height={"100%"}/>
+      <embed 
+        color='transparent' 
+        className="self-center h-[82vh] md:h-[100vh] w-full" 
+        src="/static/resumepdf.pdf" 
+        type="application/pdf" 
+        width={"100%"} 
+        height={"100%"}
+      />
     </div>
   );
 }

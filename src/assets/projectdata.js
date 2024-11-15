@@ -6,10 +6,18 @@ import university from "./university.png"
 import camera from "./camera.png"
 import spotify from "./spotify.png"
 import amazon from "./amazon.png"
+import devflow from "./dev_flow.png"
 import emailworld from "./em.png"
 
 
 export const projectdata = [
+  {
+    cardImage: devflow,
+    projectName: "Dev Overflow",
+    projectDescription: "",
+    link: "https://stack-overflow-gray.vercel.app/",
+    gitlink: "https://github.com/Mr-armanalam/stack_overflow.git"
+  },
   {
     cardImage: youtube,
     projectName: "Youtube Clone",
@@ -52,13 +60,6 @@ export const projectdata = [
     projectDescription: "",
     link: "https://spotificlon.netlify.app/",
     gitlink: "https://github.com/Mr-armanalam/SpotifyClone.git"
-  },
-  {
-    cardImage: amazon,
-    projectName: "Amazon Clone",
-    projectDescription: "",
-    link: "https://amazoncssclon.netlify.app/",
-    gitlink: "https://github.com/Mr-armanalam/AmazonClone.git"
   },
   {
     cardImage: camera,
