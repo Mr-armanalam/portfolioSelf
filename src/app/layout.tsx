@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Arman Alam | Web Developer",
     description:
     "My experience includes working on front-end and back-end technologies, creating responsive web application with latest framework & library Next.js, React.js",
-    images: "@/assets/armanhd3_enhanced.jpeg",
+    images: "/armanhd3_enhanced.jpeg",
   },
 };
 
