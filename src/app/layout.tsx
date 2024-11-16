@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import { ClickProvider } from "@/components/shared/contextProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,9 +32,9 @@ export const metadata: Metadata = {
     "Github Repo",
     "Contact",
   ],
-  applicationName: 'Arman Alam Portfolio', 
+  applicationName: "Arman Alam Portfolio",
   authors: { name: "Arman Alam", url: "https://github.com/Mr-armanalam" },
-  creator: 'Mr-armanalam',
+  creator: "Mr-armanalam",
   publisher: "Mr. Arman Alam",
   robots: { index: false, follow: false },
   icons: "/armanhd31.png",
@@ -43,13 +44,12 @@ export const metadata: Metadata = {
     images: "/home_page.jpeg",
   },
 
-  twitter:{ 
-    card: "summary_large_image", 
-    site: "https://armanalam.vercel.app/", 
-    creator: "@armanalam", 
-    images: "/home_page.jpeg" 
+  twitter: {
+    card: "summary_large_image",
+    site: "https://armanalam.vercel.app/",
+    creator: "@armanalam",
+    images: "/home_page.jpeg",
   },
-  
 };
 
 export default function RootLayout({
@@ -85,9 +85,11 @@ export default function RootLayout({
         </script>
       </Head>
       <body className={inter.className}>
-        <Navbar />
-        {children}
-        <Footer />
+        <ClickProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ClickProvider>
       </body>
     </html>
   );

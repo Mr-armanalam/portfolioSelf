@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import React from 'react';
+import Link from "next/link";
+import React from "react";
 
 const NavItem = () => {
   return (
@@ -49,6 +49,6 @@ const NavItem = () => {
       </button>
     </>
   );
-}
+};
 
-export default NavItem
+export default NavItem;

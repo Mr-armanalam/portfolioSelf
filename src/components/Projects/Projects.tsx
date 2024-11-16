@@ -17,7 +17,7 @@ const Projects = ({ moreProject }: { moreProject?: boolean }) => {
     }
   };
   return (
-    <section className="max-h-full h-fit sm:px-2 md:px-10 md:pt-12 md:pb-6 py-12 w-full">
+    <section className="max-h-full h-fit px-3.5 md:px-10 md:pt-12 md:pb-6 py-12 w-full">
       <div className={`mb-8 ${moreProject && "md:mt-4 md:mb-10"}`}>
         <h3 className="text-3xl font-extrabold text-cstmclr-900 ">Projects</h3>
         <p className="text-cstmclr-500 font-medium">

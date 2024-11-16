@@ -1,7 +1,7 @@
 'use client'
 import React, { useState} from 'react';
 import {useRouter} from 'next/navigation'
-import showAlertDialog from '@/components/alert';
+import { useToast } from '@/hooks/use-toast';
 
 const page = () => {
     const [username, setUsername] = useState('');
@@ -9,36 +9,30 @@ const page = () => {
     const [description, setDescription] = useState('');
     const [submit, setSubmit]= useState(false);
     const router = useRouter();
-    // console.log(username, email, description);
+    const { toast } = useToast()
+    
 
     const handleSubmit = async (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         setSubmit(true);
         try{
-          // const response = await axios.post("/api/contact", {
-          //     username,
-          //     email,
-          //     description
-          // }).then((response)=> {console.log(response)});
-          // alert("Thank you for your feedback !")
           await fetch("api/contact", { method: "POST",body: JSON.stringify({
                username:username, 
                email:email, 
                description:description 
             }),
           }).then((response) => {
-            console.log(response);
+            toast({
+              title: response.status === 200 ? "Thank you for your valuable feedback!" : "Something went wrong, please try after some time",
+              variant: response.status !== 200 ? "destructive" : "default",
+            })
           });
-           //alert("Thank you for your valuable feedback ! ❤️❤️");
-           const alrt = ()=>{ return (showAlertDialog("Thank you for your valuable feedback!", )); };
-           alrt();
            setSubmit(false);
           router.push('/');
         }catch(error) {
             console.log(error);
         }
     }
-
 
   return (
     <section className="w-full px-4 pt-28 md:px-8 h-[93vh]">

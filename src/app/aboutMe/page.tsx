@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { GrProjects } from "react-icons/gr";
 import Popout from '@/components/about/popout';
 import { Metadata } from 'next';
+import { useClick } from '@/components/shared/contextProvider';
 
 
 // export const metadata: Metadata = {
@@ -10,14 +11,16 @@ import { Metadata } from 'next';
 //   keywords: ["About Us","Arman Alam"]
 // }
 const page = () => {
-  const [ispopout, setIspopout] = useState(false);
+  // const [ispopout, setIspopout] = useState(false);
+  const {ispopout, setIspopout} = useClick();
+
   return (
     <>
     {ispopout ? <Popout />:null}
     
-      <section onDoubleClick={()=> setIspopout(false)} className='pt-14 lg:pt-16 relative h-auto w-full px-2 md:px-8'>
+      <section onClick={()=>setIspopout(false)} className='pt-14 lg:pt-16 relative h-auto w-full px-2 md:px-8'>
 
-        <button onClick={()=>setIspopout(true)} className='absolute right-4 p-4 top-24 md:right-24 lg:right-36 flex text-cstmclr-50 bg-cstmclr-950 hover:bg-black border-2 border-cstmclr-400 items-center md:top-28 lg:top-40 font-bold rounded-md'>
+        <button onClick={(e)=>{e.stopPropagation() ;setIspopout(true)}} className='absolute text-xs md:text-sm lg:text-base right-4 p-4 top-24 md:right-24 lg:right-36 flex text-cstmclr-50 bg-cstmclr-950 hover:bg-black border-2 border-cstmclr-400 items-center md:top-28 lg:top-40 font-bold rounded-md'>
           <GrProjects  size={13} className='mr-2 font-bold'/> My Qualification...        
         </button>
 

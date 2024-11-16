@@ -3,6 +3,7 @@ import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/skills/Skills";
 import WhatcanIdo from "@/components/herosection/WhatcanIdo";
 import { Metadata } from "next";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Arman Alam's Portfolio",
@@ -21,6 +22,7 @@ export default function Home() {
     <WhatcanIdo />
     <Projects /> 
     <Skills />
+    <Toaster />
     </>
   );
 }
