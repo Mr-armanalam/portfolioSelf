@@ -28,16 +28,28 @@ export const metadata: Metadata = {
     "Contact Us",
     "experience",
     "My Skills",
-    "Github Repo",  
+    "Github Repo",
     "Contact",
   ],
+  applicationName: 'Arman Alam Portfolio', 
   authors: { name: "Arman Alam", url: "https://github.com/Mr-armanalam" },
+  creator: 'Mr-armanalam',
+  publisher: "Mr. Arman Alam",
+  robots: { index: false, follow: false },
   icons: "/armanhd31.png",
   openGraph: {
     type: "website",
     url: "https://armanalam.vercel.app/",
     images: "/home_page.jpeg",
   },
+
+  twitter:{ 
+    card: "summary_large_image", 
+    site: "https://armanalam.vercel.app/", 
+    creator: "@armanalam", 
+    images: "/home_page.jpeg" 
+  },
+  
 };
 
 export default function RootLayout({

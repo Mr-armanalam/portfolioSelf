@@ -5,8 +5,9 @@ import WhatcanIdo from "@/components/herosection/WhatcanIdo";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home | Arman Alam's Portfolio",
+  title: "Arman Alam's Portfolio",
   description: "Welcome to Arman's Portfolio! Explore a selected showcase of my most impactful projects and creative effort. Let's connect and create something extraordinary together.",
+  keywords: ["Arman portfolio","Arman Alam's Portfolio", "Arman Alam portfolio"],
   openGraph: {
     type: "website",
     url: "https://armanalam.vercel.app/",
