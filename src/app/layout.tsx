@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   authors: { name: "Arman Alam", url: "https://github.com/Mr-armanalam" },
   creator: "Mr-armanalam",
   publisher: "Mr. Arman Alam",
-  robots: { index: false, follow: false },
+  // robots: { index: false, follow: false },
   icons: "/armanhd31.png",
   openGraph: {
     type: "website",
