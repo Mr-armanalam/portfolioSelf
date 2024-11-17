@@ -19,7 +19,7 @@ const navbar = () => {
         </div>
 
         {!togglebtn ? (
-          <button className="ml-auto md:hidden mr-4">
+          <button type='button' className="ml-auto md:hidden mr-4">
             <FaBars
               onClick={() => setTogglebtn(true)}
               size={24}
@@ -35,14 +35,14 @@ const navbar = () => {
             backdrop-blur-sm bg-opacity-10 border-cstmclr-300 shadow-lg"
             onClick={() => setTogglebtn(false)}
           >
-            <div className="relative h-full">
+            <section className="relative h-full">
               <FaXmark
                 onClick={() => setTogglebtn(false)}
                 size={24}
                 className="absolute text-cstmclr-400 hover:text-cstmclr-700 cursor-pointer -right-8"
               />
               <NavItem />
-            </div>
+            </section>
           </div>
         ) : null}
       </div>

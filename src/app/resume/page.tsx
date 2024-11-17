@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-     <div className="pt-16 relative border h-fit w-full justify-center flex">
+     <main className="pt-16 relative border h-fit w-full justify-center flex">
       
       {/* <div className='text-cstmclr-700 absolute top-24 lg:right-40 md:right-12 right-4 xl:right-64 text-2xl'>
         <a href="/static/resumepdf.pdf" download="Arman resume"> <FaDownload /></a>
@@ -35,7 +35,7 @@ const page = () => {
         width={"100%"} 
         height={"100%"}
       />
-    </div>
+    </main>
   );
 }
 

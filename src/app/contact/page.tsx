@@ -35,7 +35,7 @@ const page = () => {
     }
 
   return (
-    <section className="w-full px-4 pt-28 md:px-8 h-[93vh]">
+    <main className="w-full px-4 pt-28 md:px-8 h-[93vh]">
       <div className="mx-auto relative px-4 max-w-[60rem] xl:w-[90vw]  xl:mt-12 lg:h-[60vh] h-[72vh]
       lg:px-28 md:px-12 justify-center flex items-center bg-cstmclr-900 rounded-lg border
     border-cstmclr-200">
@@ -78,7 +78,7 @@ const page = () => {
           </button>
         </form>
       </div>
-    </section>
+    </main>
   );
 }
 

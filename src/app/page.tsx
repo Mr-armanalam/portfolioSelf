@@ -7,22 +7,27 @@ import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Arman Alam's Portfolio",
-  description: "Welcome to Arman's Portfolio! Explore a selected showcase of my most impactful projects and creative effort. Let's connect and create something extraordinary together.",
-  keywords: ["Arman portfolio","Arman Alam's Portfolio", "Arman Alam portfolio"],
+  description:
+    "Explore a selected showcase of my most impactful projects and creative effort. Let's connect and create something extraordinary together.",
+  keywords: [
+    "Arman portfolio",
+    "Arman Alam's Portfolio",
+    "Arman Alam portfolio",
+  ],
   openGraph: {
     type: "website",
     url: "https://armanalam.vercel.app/",
     images: "/home_page.png",
   },
-}
+};
 export default function Home() {
   return (
-    <>
-    <HeroSection />
-    <WhatcanIdo />
-    <Projects /> 
-    <Skills />
-    <Toaster />
-    </>
+    <main>
+      <HeroSection />
+      <WhatcanIdo />
+      <Projects />
+      <Skills />
+      <Toaster />
+    </main>
   );
 }

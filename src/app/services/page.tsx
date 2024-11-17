@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section className="w-auto h-auto ">
+    <main className="w-auto h-auto ">
       <div className="h-auto pt-16 w-auto ">
         <div className="md:mt-16 my-8 mx-2 md:mx-12 md:mb-10 ">
           <h3 className="text-3xl font-extrabold text-cstmclr-900 hover:text-cstmclr-950">
@@ -69,7 +69,7 @@ const page = () => {
           ))}
         </div>
       </div>
-    </section>
+    </main>
   );
 };
 
