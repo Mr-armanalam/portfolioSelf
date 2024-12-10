@@ -47,7 +47,7 @@ const page = () => {
             name='username'
             value={username}
             onChange={(e) => {setUsername(e.target.value)}}
-            className="w-full text-sm text-cstmclr-900 px-2 outline-none py-1 rounded border "
+            className="w-full h-10 text-sm text-cstmclr-900 px-2 outline-none py-1 rounded border "
             placeholder='please write your name'
             required
           />
@@ -58,7 +58,7 @@ const page = () => {
             id="email"
             value={email}
             onChange={(e) => {setEmail(e.target.value)}}
-            className="w-full text-sm text-cstmclr-900 px-2 outline-none py-1  rounded border"
+            className="w-full text-sm h-10 text-cstmclr-900 px-2 outline-none py-1  rounded border"
             placeholder='please write your email'
             required
           />
