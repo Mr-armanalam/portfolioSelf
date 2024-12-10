@@ -13,6 +13,10 @@ import { SiMongodb } from "react-icons/si";
 import { GrMysql } from "react-icons/gr";
 import { MdDatasetLinked } from "react-icons/md";
 import { TbBrandThreejs } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
+import { MdOutlineSettingsSuggest } from "react-icons/md";
+
+
 
 export const skillsIcon = {
   FaReact,
@@ -30,39 +34,41 @@ export const skillsIcon = {
   MdDatasetLinked,
   FaGitSquare,
   TbBrandThreejs,
+  BiLogoTypescript,
+  MdOutlineSettingsSuggest,
   // Add more icons as needed for more skills. For example:
 }
 
 export const toolsIcon = [
   {icon: <FaReact />, name: "React",},
   {icon: <SiNextdotjs />, name: "Next.js",},
+  {icon: <BiLogoTypescript /> , name: "Typescript"},
   {icon: <IoLogoJavascript />, name: "Javascript",},
   {icon: <FaJava />, name: "Java",},
   {icon: <FaNodeJs />, name: "Node.Js",},
   {icon: <SiExpress />, name: "Express",},
   {icon: <SiMongodb />, name: "Mongodb",},
   {icon: <GrMysql />, name: "Mysql",},
-  {icon: <RiTailwindCssLine />, name: "TailwindCss",},
+  {icon: <RiTailwindCssLine />, name: "Tailwindcss",},
   {icon: <FaBootstrap />, name: "Bootstrap",},
-  {icon: <FaHtml5 />, name: "Html5",},
-  {icon: <TiCss3 />, name: "Css3",},
-  {icon: <MdDatasetLinked />, name: "Resful APIs",},
   {icon: <FaGitSquare />, name: "Git",},
-  {icon: <TbBrandThreejs />, name: "TbBrandThreejs",},
+  {icon: <MdDatasetLinked />, name: "Resful APIs",},
+  {icon: <MdOutlineSettingsSuggest />, name: "Cloud Services",},
+  {icon: <TbBrandThreejs />, name: "Threejs",},
 ];
 
 
 export const projectData = [
   {
-    duration: "2 years",
+    duration: "1.5 years",
     project: "ChatGemeni Clone, Code Assistant, Chat App, Youtube Clone",
   },
   {
-    duration: "1 year",
+    duration: "3 year",
     project: "Youtube Clone, Chat App",
   },
   {
-    duration: "1 year",
+    duration: "2 year",
     project: "Youtube Clone, Chat App",
   },
   {

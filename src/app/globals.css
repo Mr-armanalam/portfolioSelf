@@ -96,6 +96,13 @@
   animation: 3.5s shine linear infinite;
 }
 
+.animated-box2 {
+  background: #fff;
+  background: linear-gradient(110deg, #f2f2f2 8%, #e0e0e0 18%, #f2f2f2 33%);
+  background-size: 200% 100%;
+  animation: 3.5s shine linear infinite;
+}
+
 @keyframes service_glass {
   from {
     z-index: -250;
