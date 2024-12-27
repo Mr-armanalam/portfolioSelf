@@ -81,6 +81,7 @@ const config: Config = {
       },
     },
   },
+  variants: { extend: { backgroundColor: ['dark'] } },
   plugins: [require("tailwindcss-animate")],
 };
 export default config;

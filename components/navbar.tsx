@@ -8,9 +8,9 @@ import { FaBars, FaXmark } from "react-icons/fa6";
 const Navbar = () => {
   const [togglebtn, setTogglebtn] = useState(false);
   return (
-    <nav className="absolute left-0 right-0 z-50 w-full bg-custom-gray">
-      <div className="md:12 relative flex h-16 items-center border-y-[1px] border-cstmclr-100 bg-custom-gradient">
-        <div className="cursor-pointer px-4 text-xl font-extrabold text-cstmclr-950 hover:text-black md:px-8 lg:text-2xl ">
+    <nav className="absolute left-0 right-0 z-50 w-full bg-custom-gray dark:border-y-2 dark:border-cstmclr-900 dark:bg-cstmclr-900">
+      <div className="md:12 relative flex h-16 items-center border-y-[1px] border-cstmclr-100 bg-custom-gradient from-black to-slate-950 dark:border-none dark:bg-gradient-to-r ">
+        <div className="cursor-pointer px-4 text-xl font-extrabold text-cstmclr-950  hover:text-black dark:text-cstmclr-200 md:px-8 lg:text-2xl ">
           <Link href="/">My Portfolio</Link>
         </div>
 
