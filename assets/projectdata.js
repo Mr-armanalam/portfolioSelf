@@ -28,7 +28,7 @@ export const projectdata = [
     projectName: "Youtube Clone",
     projectDescription:
       "A fully responsive Youtube clone built with Next.js, React, and Tailwind CSS.",
-    link: "https://acubenet.netlify.app/",
+    link: "https://accube.vercel.app/",
     gitlink: "https://github.com/Mr-armanalam/Acube.git",
   },
   {
