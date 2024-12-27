@@ -1,16 +1,16 @@
-import React from 'react'
-import {projectData, toolsIcon} from "./icon"
-
+/* eslint-disable multiline-ternary */
+import React from "react";
+import { projectData, toolsIcon } from "./icon";
 
 const Skill = () => {
-  const iconIndex = [0,3,6,1,9,12];
+  const iconIndex = [0, 3, 6, 1, 9, 12];
 
   return (
-    <div className="lg:grid flex flex-col md:flex-row md:flex-wrap auto-rows-[192px] grid-cols-3 gap-4">
+    <div className="flex auto-rows-[192px] grid-cols-3 flex-col gap-4 md:flex-row md:flex-wrap lg:grid">
       {[...Array(7)].map((_, i) => (
         <div
           key={i}
-          className={`row-span-1 md:flex-1 lg:overflow-auto flex animated-box flex-col rounded-xl border-2 shadow-inner border-cstmclr-200 bg-white px-4 pt-4 ${
+          className={`animated-box row-span-1 flex flex-col rounded-xl border-2 border-cstmclr-200 bg-white px-4 pt-4 shadow-inner md:flex-1 lg:overflow-auto ${
             i === 3 || i === 6 ? "col-span-2 md:min-w-full" : ""
           }`}
         >
@@ -18,13 +18,13 @@ const Skill = () => {
             <>
               <p
                 key={i + 1}
-                className="ml-auto mb-2 font-semibold text-cstmclr-300 text-sm"
+                className="mb-2 ml-auto text-sm font-semibold text-cstmclr-300"
               >
                 {projectData[i].title}
               </p>
               <ul
                 key={i + 2}
-                className="pr-4  text-xs pl-8 list-disc py-2 flex flex-col gap-2 font-bold md:text-sm text-cstmclr-400 hover:text-cstmclr-500"
+                className="flex  list-disc flex-col gap-2 py-2 pl-8 pr-4 text-xs font-bold text-cstmclr-400 hover:text-cstmclr-500 md:text-sm"
               >
                 <li>{projectData[i].discription1}</li>
                 <li>{projectData[i].discription2}</li>
@@ -36,18 +36,18 @@ const Skill = () => {
             <>
               <p
                 key={i + 3}
-                className="ml-auto font-semibold text-cstmclr-300 text-sm"
+                className="ml-auto text-sm font-semibold text-cstmclr-300"
               >
                 {projectData[i].duration} exprience
               </p>
               <div
                 key={i + 4}
-                className=" px-4 py-2 font-bold text-lg text-cstmclr-700"
+                className=" px-4 py-2 text-lg font-bold text-cstmclr-700"
               >
                 {i > 5 ? null : (
                   <>
                     {[...Array(3)].map((_, n) => (
-                      <p key={i + n} className="flex gap-2 items-center ">
+                      <p key={i + n} className="flex items-center gap-2 ">
                         {toolsIcon[iconIndex[i] + n].icon}
                         {toolsIcon[iconIndex[i] + n].name}
                       </p>
@@ -57,7 +57,7 @@ const Skill = () => {
               </div>
               <p
                 key={i + 5}
-                className="pl-4 text-sm text-cstmclr-300 font-semibold"
+                className="pl-4 text-sm font-semibold text-cstmclr-300"
               >
                 Project: {projectData[i].project}
               </p>
@@ -67,6 +67,6 @@ const Skill = () => {
       ))}
     </div>
   );
-}
+};
 
-export default Skill
+export default Skill;

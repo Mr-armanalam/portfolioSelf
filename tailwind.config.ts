@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-require-imports */
+/* eslint-disable quote-props */
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -25,7 +27,7 @@ const config: Config = {
         },
 
         "custom-gray": "rgb(220,220,220)",
-        //background: 'linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913)',
+        // background: 'linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913)',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

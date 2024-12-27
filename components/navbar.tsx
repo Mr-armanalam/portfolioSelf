@@ -1,25 +1,25 @@
-'use client'
-import Link from 'next/link';
-import React, { useState } from 'react'
-import NavItem from './navItem';
-import { FaBars } from "react-icons/fa6";
-import { FaXmark } from "react-icons/fa6";
+/* eslint-disable multiline-ternary */
+"use client";
+import Link from "next/link";
+import React, { useState } from "react";
+import NavItem from "./navItem";
+import { FaBars, FaXmark } from "react-icons/fa6";
 
-const navbar = () => {
+const Navbar = () => {
   const [togglebtn, setTogglebtn] = useState(false);
   return (
-    <nav className="absolute z-50 left-0 bg-custom-gray right-0 w-full">
-      <div className="flex bg-custom-gradient border-y-[1px] border-cstmclr-100 h-16 md:12 items-center relative">
-        <div className="font-extrabold px-4 md:px-8 text-cstmclr-950 hover:text-black text-xl lg:text-2xl cursor-pointer ">
+    <nav className="absolute left-0 right-0 z-50 w-full bg-custom-gray">
+      <div className="md:12 relative flex h-16 items-center border-y-[1px] border-cstmclr-100 bg-custom-gradient">
+        <div className="cursor-pointer px-4 text-xl font-extrabold text-cstmclr-950 hover:text-black md:px-8 lg:text-2xl ">
           <Link href="/">My Portfolio</Link>
         </div>
 
-        <div className="hidden md:items-center ml-auto md:flex">
+        <div className="ml-auto hidden md:flex md:items-center">
           <NavItem />
         </div>
 
         {!togglebtn ? (
-          <button type='button' className="ml-auto md:hidden mr-4">
+          <button type="button" className="ml-auto mr-4 md:hidden">
             <FaBars
               onClick={() => setTogglebtn(true)}
               size={24}
@@ -30,16 +30,16 @@ const navbar = () => {
 
         {togglebtn ? (
           <div
-            className="h-[100vh] w-[14rem] py-8 px-12  md:hidden top-0 right-0 z-50 absolute border
-          bg-gray-400 rounded-t-md bg-clip-padding backdrop-filter
-            backdrop-blur-sm bg-opacity-10 border-cstmclr-300 shadow-lg"
+            className="absolute right-0 top-0 z-50  h-[100vh] w-[14rem] rounded-t-md border border-cstmclr-300 bg-gray-400
+          bg-opacity-10 bg-clip-padding px-12 py-8
+            shadow-lg backdrop-blur-sm backdrop-filter md:hidden"
             onClick={() => setTogglebtn(false)}
           >
             <section className="relative h-full">
               <FaXmark
                 onClick={() => setTogglebtn(false)}
                 size={24}
-                className="absolute text-cstmclr-400 hover:text-cstmclr-700 cursor-pointer -right-8"
+                className="absolute -right-8 cursor-pointer text-cstmclr-400 hover:text-cstmclr-700"
               />
               <NavItem />
             </section>
@@ -48,6 +48,6 @@ const navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
-export default navbar
+export default Navbar;

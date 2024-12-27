@@ -4,6 +4,7 @@ import Skills from "@/components/skills/Skills";
 import WhatcanIdo from "@/components/herosection/WhatcanIdo";
 import { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Arman Alam's Portfolio",
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     images: "/home_page.png",
   },
 };
-export default function Home() {
+export default function Home () {
   return (
     <main>
       <HeroSection />

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState } from "react";
 
 interface ClickContextType {
   ispopout: boolean;
@@ -9,7 +9,7 @@ interface ClickContextType {
 
 const ClickContext = createContext<ClickContextType | undefined>(undefined);
 
-export function ClickProvider({ children }: { children: React.ReactNode }) {
+export function ClickProvider ({ children }: { children: React.ReactNode }) {
   const [ispopout, setIspopout] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ export function ClickProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function useClick() {
+export function useClick () {
   const context = useContext(ClickContext);
 
   if (!context) {

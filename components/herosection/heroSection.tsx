@@ -1,30 +1,30 @@
-import React from 'react'
-import { FaLinkedin } from "react-icons/fa6";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+/* eslint-disable @next/next/no-img-element */
+import React from "react";
+import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
+import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
+
 import { CgArrowLongRight } from "react-icons/cg";
 // import selfPicture from '../../assets/armanhd3.jpeg';
-import selfPicture from '../../assets/armanhd3_enhanced.jpeg';
-import Link from 'next/link';
+import selfPicture from "../../assets/armanhd3_enhanced.jpeg";
+import Link from "next/link";
 
 const heroSection = () => {
   return (
-    <section className="pt-14 lg:pt-16  w-full px-2 md:px-8">
+    <section className="w-full px-2  pt-14 md:px-8 lg:pt-16">
       <div
-        className="h-fit animated-box1 lg:items-center xl:py-2 mt-4 text-center md:text-left border-cstmclr-200 shadow
-       md:rounded-lg rounded-xl border bg-white flex md:flex-row flex-col
+        className="animated-box1 mt-4 flex h-fit flex-col rounded-xl border border-cstmclr-200 bg-white
+       text-center shadow md:flex-row md:rounded-lg md:text-left lg:items-center xl:py-2
       "
       >
-        <div className="mt-10 lg:my-auto xl:ml-20 lg:ml-12 md:ml-8 mx-4  w-fit md:max-w-[55vw]">
-          <p className="md:text-4xl text-2xl font-extrabold text-cstmclr-800">
-            Hey, I'm Arman Alam{" "}
-            <span className="md:text-nowrap hover:text-blue-900">
+        <div className="mx-4 mt-10 w-fit md:ml-8 md:max-w-[55vw] lg:my-auto  lg:ml-12 xl:ml-20">
+          <p className="text-2xl font-extrabold text-cstmclr-800 md:text-4xl">
+            Hey, I&apos;m Arman Alam{" "}
+            <span className="hover:text-blue-900 md:text-nowrap">
               Full-Stack Web Developer
             </span>
           </p>
 
-          <p className="mt-8 md:text-base text-sm text-cstmclr-500 ">
+          <p className="mt-8 text-sm text-cstmclr-500 md:text-base ">
             A passionate and dedicated developer with experienced in building
             dynamic and responsive web applications. My expertise lies in the{" "}
             <span className="font-bold hover:text-blue-900">MERN Stack</span>{" "}
@@ -32,35 +32,35 @@ const heroSection = () => {
             foundation in Next.js.{" "}
           </p>
 
-          <div className="flex md:mb-4 lg:mb-0 justify-center md:justify-start items-center gap-2 mt-10">
-            <button className="bg-cstmclr-700 md:text-base text-sm hover:bg-cstmclr-950 px-4 mr-10 text-cstmclr-200 p-2 rounded font-bold">
+          <div className="mt-10 flex items-center justify-center gap-2 md:mb-4 md:justify-start lg:mb-0">
+            <button className="mr-10 rounded bg-cstmclr-700 p-2 px-4 text-sm font-bold text-cstmclr-200 hover:bg-cstmclr-950 md:text-base">
               Reach Out
             </button>
-            <div className="text-cstmclr-700 items-center flex gap-1 cursor-pointer">
+            <div className="flex cursor-pointer items-center gap-1 text-cstmclr-700">
               <Link href={""}>
-                <CgArrowLongRight className=" hover:text-cstmclr-950 hover:text-lg" />
+                <CgArrowLongRight className=" hover:text-lg hover:text-cstmclr-950" />
               </Link>
               <Link href={"https://www.linkedin.com/in/mrarmanalam"}>
-                <FaLinkedin className=" hover:text-cstmclr-950 hover:text-lg" />
+                <FaLinkedin className=" hover:text-lg hover:text-cstmclr-950" />
               </Link>
               <Link href={"https://www.instagram.com/arman91174"}>
-                <FaInstagramSquare className=" hover:text-cstmclr-950 hover:text-lg" />
+                <FaInstagramSquare className=" hover:text-lg hover:text-cstmclr-950" />
               </Link>
               <Link href={"https://www.facebook.com/arman78578"}>
-                <FaFacebookSquare className=" hover:text-cstmclr-950 hover:text-lg" />
+                <FaFacebookSquare className=" hover:text-lg hover:text-cstmclr-950" />
               </Link>
               <Link href={"https://x.com/armanalam78578"}>
-                <FaSquareXTwitter className=" hover:text-cstmclr-950 hover:text-lg" />
+                <FaSquareXTwitter className=" hover:text-lg hover:text-cstmclr-950" />
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="md:flex justify-center mb-12 md:mb-0 mx-auto mt-10 md:my-auto w-fit md:max-w-[45vw] md:h-[50vh]">
-          <div className="border text-center md:my-auto border-cstmclr-600 bg-cover relative xl:w-[18rem] xl:h-[18rem] lg:h-[16rem] lg:w-[16rem] md:h-[10rem] md:w-[10rem] w-[14rem] h-[14rem] rounded-full ">
+        <div className="mx-auto mb-12 mt-10 w-fit justify-center md:my-auto md:mb-0 md:flex md:h-[50vh] md:max-w-[45vw]">
+          <div className="relative h-[14rem] w-[14rem] rounded-full border border-cstmclr-600 bg-cover text-center md:my-auto md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem] ">
             <img
               src={selfPicture.src}
-              className=" rounded-full xl:w-[18rem] xl:h-[18rem] lg:h-[16rem] lg:w-[16rem] md:h-[10rem] md:w-[10rem] h-[14rem] w-[14rem]"
+              className=" h-[14rem] w-[14rem] rounded-full md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem]"
               alt="my pic "
             />
           </div>
@@ -68,7 +68,6 @@ const heroSection = () => {
       </div>
     </section>
   );
-}
+};
 
-export default heroSection
-
+export default heroSection;

@@ -5,25 +5,24 @@ import { MdClass } from "react-icons/md";
 
 const WhatcanIdo = () => {
   return (
-    <div className="w-full h-fit ">
-      <div className="md:m-6 max-sm:mx-4 md:my-4 xl:px-4 lg:flex-row relative flex-col items-center flex">
-        <div className="lg:max-w-[55vw] xl:max-w-[60vw] md:w-full lg:pl-0 lg:pt-16 lg:pb-8 md:pt-20 pt-16 flex flex-col lg:h-fit md:h-[100vh] ">
-          <h1 className="text-3xl hover:text-blue-900 text-cstmclr-900 font-extrabold">
+    <div className="h-fit w-full ">
+      <div className="relative flex flex-col items-center max-sm:mx-4 md:m-6 md:my-4 lg:flex-row xl:px-4">
+        <div className="flex flex-col pt-16 md:h-[100vh] md:w-full md:pt-20 lg:h-fit lg:max-w-[55vw] lg:pb-8 lg:pl-0 lg:pt-16 xl:max-w-[60vw] ">
+          <h1 className="text-3xl font-extrabold text-cstmclr-900 hover:text-blue-900">
             Experience
-            
           </h1>
-          <p className="text-cstmclr-500 text-sm md:text-base font-medium">
+          <p className="text-sm font-medium text-cstmclr-500 md:text-base">
             My some learning experience
           </p>
 
           <div className=" flex flex-col gap-8">
             <div>
-              <h2 className="mt-8  text-cstmclr-600 font-extrabold text-xl flex items-center gap-4 hover:animate-bounce mb-2  hover:text-cstmclr-800">
+              <h2 className="mb-2  mt-8 flex items-center gap-4 text-xl font-extrabold text-cstmclr-600 hover:animate-bounce  hover:text-cstmclr-800">
                 <MdClass />
                 <p className="text-2xl ">Intern with Nullclass </p>
               </h2>
 
-              <div className="text-cstmclr-500 text-base flex gap-2 flex-col font-medium ">
+              <div className="flex flex-col gap-2 text-base font-medium text-cstmclr-500 ">
                 <p>
                   Strengthen our skills in ReactJS, Understand Redux for state
                   management, including Redux Thunk for handling asynchronous
@@ -45,13 +44,12 @@ const WhatcanIdo = () => {
             </div>
 
             <div>
-              <h3 className="hover:animate-bounce mb-2  hover:text-cstmclr-800 text-cstmclr-600 font-extrabold text-xl flex items-center gap-4">
+              <h3 className="mb-2 flex  items-center gap-4 text-xl font-extrabold text-cstmclr-600 hover:animate-bounce hover:text-cstmclr-800">
                 <MdClass />
                 <p className="text-2xl  "> Intern with Xzect OSPE </p>
               </h3>
-              
 
-              <div className="text-cstmclr-500 text-base flex gap-2 flex-col font-medium">
+              <div className="flex flex-col gap-2 text-base font-medium text-cstmclr-500">
                 <p>
                   Created a user-friendly chat interface for interacting with
                   the Gemini model .
@@ -68,17 +66,17 @@ const WhatcanIdo = () => {
             </div>
           </div>
         </div>
-        <div className="lg:max-w-[45vw] xl:max-w-[40vw] xl:mt-auto mb-12 lg:mb-0 w-full mt-20 xl:gap-12 gap-4 lg:gap-12 flex lg:items-end flex-col md:flex-row lg:flex-col">
-          <div className="border h-[10.5rem] max-w-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
-            <p className="text-cstmclr-800  font-bold p-2 hover:text-cstmclr-950 ml-auto text-sm">
+        <div className="mb-12 mt-20 flex w-full flex-col gap-4 md:flex-row lg:mb-0 lg:max-w-[45vw] lg:flex-col lg:items-end lg:gap-12 xl:mt-auto xl:max-w-[40vw] xl:gap-12">
+          <div className="flex h-[10.5rem] w-full max-w-full flex-col rounded-md border border-cstmclr-200 bg-white pl-8 shadow-md md:w-[27rem] lg:ml-20">
+            <p className="ml-auto  p-2 text-sm font-bold text-cstmclr-800 hover:text-cstmclr-950">
               Jun 2024 - 2 months{" "}
             </p>
-            <div className="m-2 text-cstmclr-600 font-medium ">
+            <div className="m-2 font-medium text-cstmclr-600 ">
               <p>Position: Full Stack Developer </p>
               <p>Mode: Online / Remote</p>
               <button className="hover:font-bold">
                 <Link
-                  className="flex items-center hover:bg-cstmclr-950 mt-4 border py-2 px-8 rounded-md bg-cstmclr-800 text-cstmclr-200 gap-4"
+                  className="mt-4 flex items-center gap-4 rounded-md border bg-cstmclr-800 px-8 py-2 text-cstmclr-200 hover:bg-cstmclr-950"
                   href="https://github.com/Mr-armanalam/Acube.git"
                 >
                   <div className="hover:text-lg">
@@ -89,16 +87,16 @@ const WhatcanIdo = () => {
               </button>
             </div>
           </div>
-          <div className=" border h-[10.5rem] w-max-full pl-8 lg:ml-20 flex flex-col border-cstmclr-200 shadow-md bg-white rounded-md w-full md:w-[27rem]">
-            <p className="text-cstmclr-800  font-bold p-2 hover:text-cstmclr-950 ml-auto text-sm">
+          <div className=" w-max-full flex h-[10.5rem] w-full flex-col rounded-md border border-cstmclr-200 bg-white pl-8 shadow-md md:w-[27rem] lg:ml-20">
+            <p className="ml-auto  p-2 text-sm font-bold text-cstmclr-800 hover:text-cstmclr-950">
               Jun 2024 - 2 months{" "}
             </p>
-            <div className="m-2 text-cstmclr-600 font-medium ">
+            <div className="m-2 font-medium text-cstmclr-600 ">
               <p>Position: Next.js Developer </p>
               <p>Mode: Online / Remote</p>
               <button className="hover:font-bold">
                 <Link
-                  className="flex items-center hover:bg-cstmclr-950 mt-4 border py-2 px-8 rounded-md bg-cstmclr-800 text-cstmclr-200 gap-4"
+                  className="mt-4 flex items-center gap-4 rounded-md border bg-cstmclr-800 px-8 py-2 text-cstmclr-200 hover:bg-cstmclr-950"
                   href="https://github.com/Mr-armanalam/ChatGemini.git"
                 >
                   <div className="hover:text-lg">

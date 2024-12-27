@@ -5,25 +5,23 @@
 
 // next.config.js
 
-
 const nextConfig = {
-    webpack: (config) => {
-      config.module.rules.push({
-        test: /\.pdf$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: 'img'
-            }
-          }
-        ]
-      });
-  
-      return config;
-    },
-  };
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.pdf$/,
+      use: [
+        {
+          loader: "file-loader",
+          options: {
+            name: "[name].[ext]",
+            outputPath: "img",
+          },
+        },
+      ],
+    });
 
-  export default nextConfig;
-  
+    return config;
+  },
+};
+
+export default nextConfig;

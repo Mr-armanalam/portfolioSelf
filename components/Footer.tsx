@@ -1,17 +1,17 @@
-import React from 'react'
+import React from "react";
 import { IoGlobeOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
-    <footer className="bg-inherit h-12 mb-1 border-y border-cstmclr-400 items-center flex justify-center">
-      <div className=" text-cstmclr-700 gap-2 flex items-center">
-        <IoGlobeOutline className='animate-pulse'/>
-        <p className="text-xs md:text-sm font-medium">
+    <footer className="mb-1 flex h-12 items-center justify-center border-y border-cstmclr-400 bg-inherit">
+      <div className=" flex items-center gap-2 text-cstmclr-700">
+        <IoGlobeOutline className="animate-pulse" />
+        <p className="text-xs font-medium md:text-sm">
           A Portfolio website to introduce myself
         </p>
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

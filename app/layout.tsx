@@ -3,12 +3,13 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
-import Head from "next/head";
 import { ClickProvider } from "@/components/shared/contextProvider";
+import React from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://armanalam.vercel.app"),
   title: "Arman Alam | Full Stack Web Developer",
   description:
     "My experience includes working on front-end and back-end technologies, creating responsive web application with latest framework & library Next.js, React.js",
@@ -30,7 +31,7 @@ export const metadata: Metadata = {
     "experience",
     "My Skills",
     "Github Repo",
-    "Contact",
+    "Contact"
   ],
   applicationName: "Arman Alam Portfolio",
   authors: { name: "Arman Alam", url: "https://github.com/Mr-armanalam" },
@@ -41,49 +42,24 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://armanalam.vercel.app/",
-    images: "/home_page.jpeg",
+    images: "/home_page.jpeg"
   },
 
   twitter: {
     card: "summary_large_image",
     site: "https://armanalam.vercel.app/",
     creator: "@armanalam",
-    images: "/home_page.jpeg",
-  },
+    images: "/home_page.jpeg"
+  }
 };
 
-export default function RootLayout({
-  children,
+export default function RootLayout ({
+  children
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <Head>
-        {/* Add schema.org metadata */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Person",
-            name: "Arman Alam",
-            url: "https://armanalam.vercel.app",
-            sameAs: [
-              "https://www.linkedin.com/in/mrarmanalam",
-              "https://github.com/Mr-armanalam",
-              "https://www.instagram.com/arman91174",
-            ],
-            worksFor: {
-              "@type": "OrganizationRole",
-              name: "Full Stack Web Developer",
-              organization: {
-                "@type": "Organization",
-                name: "Arman Alam",
-                url: "https://armanalam.vercel.app/",
-              },
-            },
-          })}
-        </script>
-      </Head>
       <body className={inter.className}>
         <ClickProvider>
           <Navbar />

@@ -4,38 +4,38 @@ import React from "react";
 const NavItem = () => {
   return (
     <>
-      <ul className="flex flex-col md:flex-row gap-8 text-cstmclr-800 font-semibold">
+      <ul className="flex flex-col gap-8 font-semibold text-cstmclr-800 md:flex-row">
         <li>
           <Link
-            className="text-cstmclr-950 font-extrabold focus:border-b-2 border-cstmclr-950"
+            className="border-cstmclr-950 font-extrabold text-cstmclr-950 focus:border-b-2"
             href="/"
           >
             Home
           </Link>
         </li>
-        <li className="hover:text-cstmclr-950 hover:font-bold">
+        <li className="hover:font-bold hover:text-cstmclr-950">
           <Link
             href="projects"
-            className="focus:border-b-2  border-cstmclr-950"
+            className="border-cstmclr-950  focus:border-b-2"
           >
             Our Projects
           </Link>
         </li>
-        <li className="hover:text-cstmclr-950 hover:font-bold md:hidden lg:block">
+        <li className="hover:font-bold hover:text-cstmclr-950 md:hidden lg:block">
           <Link
             href="services"
-            className="focus:border-b-2  border-cstmclr-950"
+            className="border-cstmclr-950  focus:border-b-2"
           >
             Services
           </Link>
         </li>
-        <li className="hover:text-cstmclr-950 hover:font-bold">
-          <Link href="resume" className="focus:border-b-2  border-cstmclr-950">
+        <li className="hover:font-bold hover:text-cstmclr-950">
+          <Link href="resume" className="border-cstmclr-950  focus:border-b-2">
             Resume
           </Link>
         </li>
-        <li className="hover:text-cstmclr-950 hover:font-bold">
-          <Link href="aboutMe" className="focus:border-b-2  border-cstmclr-950">
+        <li className="hover:font-bold hover:text-cstmclr-950">
+          <Link href="aboutMe" className="border-cstmclr-950  focus:border-b-2">
             About Us
           </Link>
         </li>
@@ -43,7 +43,7 @@ const NavItem = () => {
 
       <button
         type="button"
-        className="bg-cstmclr-950 md:mt-0 md:relative absolute bottom-0 md:ml-8 md:mr-2 hover:bg-black border-2 border-cstmclr-400 font-semibold text-cstmclr-100 h-10 w-28 rounded-lg"
+        className="absolute bottom-0 h-10 w-28 rounded-lg border-2 border-cstmclr-400 bg-cstmclr-950 font-semibold text-cstmclr-100 hover:bg-black md:relative md:ml-8 md:mr-2 md:mt-0"
       >
         <Link href="contact">Contact</Link>
       </button>

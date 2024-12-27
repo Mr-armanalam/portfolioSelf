@@ -1,21 +1,21 @@
 import React from "react";
-export default function Loading() {
+export default function Loading () {
   return (
-    <section className="pt-14 h-[93vh] lg:pt-16  w-full px-2 md:px-8">
+    <section className="h-[93vh] w-full px-2  pt-14 md:px-8 lg:pt-16">
       <div
-        className=" h-[25rem] animated-box2 lg:items-center xl:py-2 mt-4 text-center md:text-left border-cstmclr-200 shadow
-       md:rounded-lg rounded-xl border bg-white flex md:flex-row flex-col
+        className=" animated-box2 mt-4 flex h-[25rem] flex-col rounded-xl border border-cstmclr-200 bg-white
+       text-center shadow md:flex-row md:rounded-lg md:text-left lg:items-center xl:py-2
       "
       >
-        <div className="mt-10 lg:my-auto xl:ml-20 lg:ml-12 md:ml-8 mx-4 gap-8 flex flex-col w-fit md:max-w-[55vw]">
-          <div className="w-[30rem] animated-box1 rounded-lg bg-cstmclr-100 h-[5rem] "></div>
-          <div className="w-[50rem] animated-box1 rounded-lg bg-cstmclr-100 h-[5rem] "></div>
-          <div className="w-[30rem] flex gap-8  h-[5rem] ">
-            <div className="w-[10rem] animated-box1 rounded-lg bg-cstmclr-100 mt-auto h-10"></div>
-            <div className="w-[10rem] animated-box1 rounded-lg bg-cstmclr-100 mt-auto h-10"></div>
+        <div className="mx-4 mt-10 flex w-fit flex-col gap-8 md:ml-8 md:max-w-[55vw] lg:my-auto lg:ml-12 xl:ml-20">
+          <div className="animated-box1 h-[5rem] w-[30rem] rounded-lg bg-cstmclr-100 "></div>
+          <div className="animated-box1 h-[5rem] w-[50rem] rounded-lg bg-cstmclr-100 "></div>
+          <div className="flex h-[5rem] w-[30rem]  gap-8 ">
+            <div className="animated-box1 mt-auto h-10 w-[10rem] rounded-lg bg-cstmclr-100"></div>
+            <div className="animated-box1 mt-auto h-10 w-[10rem] rounded-lg bg-cstmclr-100"></div>
           </div>
         </div>
-        <div className="rounded-full bg-cstmclr-100 w-[20rem] ml-auto mr-16 h-[20rem]"></div>
+        <div className="ml-auto mr-16 h-[20rem] w-[20rem] rounded-full bg-cstmclr-100"></div>
       </div>
     </section>
   );
