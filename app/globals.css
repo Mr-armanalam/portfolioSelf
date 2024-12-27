@@ -4,12 +4,16 @@
 
 :root {
     background-color:#f8fafc;
-    /* --background: 'linear-gradient(90deg, #003f5b, #2b4b7d, #5f5195, #98509d, #cc4c91, #f25375, #ff6f4e, #ff9913)'; */
 }
 * {
     padding: 0%;
     margin: 0%;
 }
+
+.black_btn_with_border{
+  @apply rounded-lg border-2 border-cstmclr-400 hover:bg-black bg-cstmclr-950 px-6 py-2 text-sm font-semibold text-cstmclr-100 ;
+}
+
 @layer base {
   :root {
         --background:0 0% 100%;
