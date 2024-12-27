@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/Footer";
 import { ClickProvider } from "@/components/shared/contextProvider";
 import React from "react";
+import { ThemeProvider } from "@/components/shared/themeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -62,9 +63,11 @@ export default function RootLayout ({
     <html lang="en">
       <body className={inter.className}>
         <ClickProvider>
-          <Navbar />
-          {children}
-          <Footer />
+          <ThemeProvider>
+            <Navbar />
+            {children}
+            <Footer />
+          </ThemeProvider>
         </ClickProvider>
       </body>
     </html>
