@@ -2,13 +2,11 @@
 import React from "react";
 import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
-
 import { CgArrowLongRight } from "react-icons/cg";
-// import selfPicture from '../../assets/armanhd3.jpeg';
-import selfPicture from "../../assets/armanhd3_enhanced.jpeg";
+import selfPicture from "@/assets/armanhd3_enhanced.jpeg";
 import Link from "next/link";
 
-const heroSection = () => {
+const HeroSection = () => {
   return (
     <section className="w-full px-2  pt-14 md:px-8 lg:pt-16">
       <div
@@ -70,4 +68,4 @@ const heroSection = () => {
   );
 };
 
-export default heroSection;
+export default HeroSection;

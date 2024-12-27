@@ -1,10 +1,8 @@
-import HeroSection from "@/components/herosection/heroSection";
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/skills/Skills";
-import WhatcanIdo from "@/components/herosection/WhatcanIdo";
 import { Metadata } from "next";
 import { Toaster } from "@/components/ui/toaster";
-import React from "react";
+import React, { ReactNode } from "react";
 
 export const metadata: Metadata = {
   title: "Arman Alam's Portfolio",
@@ -21,11 +19,18 @@ export const metadata: Metadata = {
     images: "/home_page.png",
   },
 };
-export default function Home () {
+export default function Home ({
+  heroSection,
+  whatCanIdo,
+}: {
+  heroSection: ReactNode;
+  whatCanIdo: ReactNode;
+}) {
   return (
     <main>
-      <HeroSection />
-      <WhatcanIdo />
+      {heroSection}
+      {whatCanIdo}
+
       <Projects />
       <Skills />
       <Toaster />
