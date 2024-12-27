@@ -1,9 +1,7 @@
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { FaGitSquare } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa";
 import { RiTailwindCssLine } from "react-icons/ri";
-import { TiCss3 } from "react-icons/ti";
 import { FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaJava } from "react-icons/fa";
@@ -16,28 +14,6 @@ import { TbBrandThreejs } from "react-icons/tb";
 import { BiLogoTypescript } from "react-icons/bi";
 import { MdOutlineSettingsSuggest } from "react-icons/md";
 
-
-
-export const skillsIcon = {
-  FaReact,
-  SiNextdotjs,
-  IoLogoJavascript,
-  FaJava,
-  FaNodeJs,
-  SiExpress,
-  SiMongodb,
-  GrMysql,
-  RiTailwindCssLine,
-  FaBootstrap,
-  FaHtml5,
-  TiCss3,
-  MdDatasetLinked,
-  FaGitSquare,
-  TbBrandThreejs,
-  BiLogoTypescript,
-  MdOutlineSettingsSuggest,
-  // Add more icons as needed for more skills. For example:
-}
 
 export const toolsIcon = [
   {icon: <FaReact />, name: "React",},

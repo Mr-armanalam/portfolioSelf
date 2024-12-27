@@ -45,7 +45,7 @@ const ServiceType = [
 ]
 
 const ProjectType = [
-    ['Dev Overflow', 'AI Chatgemeni', 'AI Code Assitant'],
+    ['Dev Overflow','QuirkCart', 'AI Chatgemeni', 'AI Code Assitant'],
     ['Youtube Clone', 'Chat App', 'Promptopia web'],
     ['Spotify Clone', 'Studio Clone','Amazon Clone']
 ];

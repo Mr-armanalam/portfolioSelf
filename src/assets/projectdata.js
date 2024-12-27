@@ -5,9 +5,8 @@ import CodeAssistant from "./CodeAssistant.png"
 import university from "./university.png"
 import camera from "./camera.png"
 import spotify from "./spotify.png"
-import amazon from "./amazon.png"
 import devflow from "./dev_flow.png"
-import emailworld from "./em.png"
+import quirkCart from './QuirkCart2.png'
 
 
 export const projectdata = [
@@ -17,6 +16,13 @@ export const projectdata = [
     projectDescription: "",
     link: "https://stack-overflow-gray.vercel.app/",
     gitlink: "https://github.com/Mr-armanalam/stack_overflow.git"
+  },
+  {
+    cardImage: quirkCart,
+    projectName: "QuirkCart",
+    projectDescription: "",
+    link: 'https://quirkcart.vercel.app',
+    gitlink: "https://github.com/Mr-armanalam/ecommerce-frontend.git"
   },
   {
     cardImage: youtube,
@@ -32,7 +38,7 @@ export const projectdata = [
     projectDescription: "",
     link: "https://chat-app2joy.onrender.com",
     gitlink: "https://github.com/Mr-armanalam/Chat_App2.git"
-  },
+  },  
   {
     cardImage: Chatgemeni,
     projectName: "AI Chatgemeni",
@@ -67,12 +73,5 @@ export const projectdata = [
     projectDescription: "",
     link: "https://studioclon.netlify.app/",
     gitlink: "https://github.com/Mr-armanalam/StudioClone.git"
-  },
-  {
-    cardImage: emailworld,
-    projectName: "Email World",
-    projectDescription: "",
-    link: "https://practice-deploy-omega.vercel.app/",
-    gitlink: "https://github.com/Mr-armanalam/EmailWorld.git"
   },
 ];
