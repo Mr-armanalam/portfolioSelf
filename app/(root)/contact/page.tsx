@@ -42,8 +42,8 @@ const Page = () => {
     <main className="h-[93vh] w-full px-4 pt-28 md:px-8">
       <div
         className="relative mx-auto flex h-[72vh] max-w-[60rem]  items-center justify-center rounded-lg
-      border border-cstmclr-200 bg-cstmclr-900 px-4 md:px-12 lg:h-[60vh] lg:px-28 xl:mt-12
-    xl:w-[90vw]"
+      border border-cstmclr-200 bg-cstmclr-900 from-black to-gray-950 px-4 dark:border-gray-700 dark:bg-gradient-to-r md:px-12 lg:h-[60vh] lg:px-28
+    xl:mt-12 xl:w-[90vw] "
       >
         <form
           onSubmit={handleSubmit}
@@ -58,7 +58,7 @@ const Page = () => {
             onChange={(e) => {
               setUsername(e.target.value);
             }}
-            className="h-10 w-full rounded border px-2 py-1 text-sm text-cstmclr-900 outline-none "
+            className="h-10 w-full rounded border from-black to-gray-950 px-2 py-1 text-sm text-cstmclr-900 outline-none dark:border-[#101010] dark:bg-gradient-to-r dark:text-cstmclr-300 "
             placeholder="please write your name"
             required
           />
@@ -71,7 +71,7 @@ const Page = () => {
             onChange={(e) => {
               setEmail(e.target.value);
             }}
-            className="h-10 w-full rounded border px-2 py-1 text-sm  text-cstmclr-900 outline-none"
+            className="h-10 w-full rounded border from-black to-gray-950 px-2 py-1 text-sm text-cstmclr-900 outline-none dark:border-[#101010] dark:bg-gradient-to-r dark:text-cstmclr-300"
             placeholder="please write your email"
             required
           />
@@ -83,7 +83,7 @@ const Page = () => {
             onChange={(e) => {
               setDescription(e.target.value);
             }}
-            className="w-full rounded border px-2 py-1 text-sm  text-cstmclr-900 outline-none"
+            className="w-full rounded border from-black to-gray-950 px-2 py-1 text-sm text-cstmclr-900 outline-none dark:border-[#101010] dark:bg-gradient-to-r dark:text-cstmclr-300"
             rows={4}
             placeholder="write a short description"
             required
