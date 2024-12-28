@@ -6,9 +6,12 @@ import { Separator } from "./ui/separator";
 import { Switch } from "./ui/switch";
 import { useTheme } from "./shared/themeProvider";
 import { setWithExpiry } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 const NavItem = () => {
   const { isdarkMode, setIsDarkMode } = useTheme();
+  const pathname = usePathname();
+  const isActive = 'border-cstmclr-950 dark:border-cstmclr-700 border-b';
   const handleThemeChange = () => {
     setIsDarkMode((prev: any) => {
       switch (prev) {
@@ -28,35 +31,35 @@ const NavItem = () => {
       <ul className="flex flex-col gap-8 font-semibold text-cstmclr-800 dark:text-cstmclr-200 md:flex-row ">
         <li>
           <Link
-            className="border-cstmclr-950 font-extrabold text-cstmclr-950 focus:border-b-2 dark:text-cstmclr-100"
+            className={`font-extrabold text-cstmclr-950 ${pathname === '/' && isActive} dark:text-cstmclr-100`}
             href="/"
           >
             Home
           </Link>
         </li>
-        <li className="hover:font-bold hover:text-cstmclr-950">
+        <li className="hover:font-bold hover:text-cstmclr-950 dark:hover:text-cstmclr-400">
           <Link
             href="projects"
-            className="border-cstmclr-950  focus:border-b-2"
+            className={pathname === '/projects' ? isActive : ''}
           >
             Our Projects
           </Link>
         </li>
-        <li className="hover:font-bold hover:text-cstmclr-950 md:hidden lg:block">
+        <li className="hover:font-bold hover:text-cstmclr-950 dark:hover:text-cstmclr-400 md:hidden lg:block">
           <Link
             href="services"
-            className="border-cstmclr-950  focus:border-b-2"
+            className={pathname === '/services' ? isActive : ''}
           >
             Services
           </Link>
         </li>
-        <li className="hover:font-bold hover:text-cstmclr-950">
-          <Link href="resume" className="border-cstmclr-950  focus:border-b-2">
+        <li className="hover:font-bold hover:text-cstmclr-950 dark:hover:text-cstmclr-400">
+          <Link href="resume" className={pathname === '/resume' ? isActive : ''}>
             Resume
           </Link>
         </li>
-        <li className="hover:font-bold hover:text-cstmclr-950">
-          <Link href="aboutMe" className="border-cstmclr-950  focus:border-b-2">
+        <li className="hover:font-bold hover:text-cstmclr-950 dark:hover:text-cstmclr-400">
+          <Link href="aboutMe" className={pathname === '/aboutMe' ? isActive : ''}>
             About Us
           </Link>
         </li>

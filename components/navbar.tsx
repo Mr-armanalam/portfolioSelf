@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="absolute left-0 right-0 z-50 w-full bg-custom-gray dark:border-y-2 dark:border-cstmclr-900 dark:bg-cstmclr-900">
       <div className="md:12 relative flex h-16 items-center border-y-[1px] border-cstmclr-100 bg-custom-gradient from-black to-slate-950 dark:border-none dark:bg-gradient-to-r ">
-        <div className="cursor-pointer px-4 text-xl font-extrabold text-cstmclr-950  hover:text-black dark:text-cstmclr-200 md:px-8 lg:text-2xl ">
+        <div className="cursor-pointer px-4 text-xl font-extrabold text-cstmclr-950 hover:text-black dark:text-cstmclr-200 dark:hover:text-cstmclr-300 md:px-8 lg:text-2xl ">
           <Link href="/">My Portfolio</Link>
         </div>
 
