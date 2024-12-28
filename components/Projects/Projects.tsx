@@ -60,7 +60,7 @@ const Projects = ({ moreProject }: { moreProject?: boolean }) => {
           <button
             onClick={() => loadmore()}
             className="ml-auto mr-8 mt-4 flex items-center gap-1 text-sm font-bold
-             text-cstmclr-800 hover:font-extrabold hover:text-black "
+             text-cstmclr-800 hover:font-extrabold hover:text-black dark:text-cstmclr-300 dark:hover:text-cstmclr-100 "
           >
             <GrProjects />{" "}
             {noOfProjects !== projectdata.length
