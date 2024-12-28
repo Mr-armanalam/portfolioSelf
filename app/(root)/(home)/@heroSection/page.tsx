@@ -10,8 +10,8 @@ const HeroSection = () => {
   return (
     <section className="w-full px-2 pt-14 md:px-8 lg:pt-16">
       <div
-        className="animated-box1 mt-4 flex h-fit flex-col rounded-xl border border-cstmclr-200 bg-white text-center
-       shadow dark:border-[#151515] dark:bg-black md:flex-row md:rounded-lg md:text-left lg:items-center xl:py-2
+        className="mt-4 flex h-fit flex-col rounded-xl border border-cstmclr-200 bg-[#ececec] text-center
+       shadow dark:border-[#151515] dark:bg-gradient-to-r dark:from-black dark:to-gray-950 md:flex-row md:rounded-lg md:text-left lg:items-center xl:py-2
       "
       >
         <div className="mx-4 mt-10 w-fit md:ml-8 md:max-w-[55vw] lg:my-auto  lg:ml-12 xl:ml-20">
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </div>
 
         <div className="mx-auto mb-12 mt-10 w-fit justify-center md:my-auto md:mb-0 md:flex md:h-[50vh] md:max-w-[45vw]">
-          <div className="relative h-[14rem] w-[14rem] rounded-full border border-cstmclr-300 bg-white bg-cover text-center dark:border-cstmclr-600 dark:bg-zinc-950 md:my-auto md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem] ">
+          <div className="relative h-[14rem] w-[14rem] rounded-full border border-cstmclr-300 bg-white from-black to-slate-950 bg-cover text-center dark:border-cstmclr-600 dark:bg-gradient-to-r md:my-auto md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem] ">
             <img
               src={selfPicture.src}
               className=" h-[14rem] w-[14rem] rounded-full md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem]"
