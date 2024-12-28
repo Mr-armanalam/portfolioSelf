@@ -26,7 +26,7 @@ const page = () => {
     <main className="h-auto w-auto ">
       <div className="h-auto w-auto pt-16 ">
         <div className="mx-2 my-8 md:mx-12 md:mb-10 md:mt-16 ">
-          <h3 className="text-3xl font-extrabold text-cstmclr-900 hover:text-cstmclr-950">
+          <h3 className="text-3xl font-extrabold text-cstmclr-900 dark:text-cstmclr-300 hover:text-cstmclr-950">
             My Services
           </h3>
           <p className="font-medium text-cstmclr-500">
@@ -51,14 +51,14 @@ const page = () => {
           {[...Array(6)].map((_, i) => (
             <div
               key={i}
-              className="h-[15rem] min-w-[20rem] flex-1 rounded-lg border border-cstmclr-200 shadow-md hover:shadow-cstmclr-300 max-lg:w-[24rem] md:min-w-80 lg:min-w-[24rem] "
+              className="h-[15rem] min-w-[20rem] flex-1 rounded-lg border border-cstmclr-200 shadow-md hover:shadow-cstmclr-300 dark:border-[#252525] max-lg:w-[24rem] md:min-w-80 lg:min-w-[24rem] "
             >
               <div className="trnstion relative h-[15rem] max-w-fit">
                 <Image
                   className="h-[86%] rounded-t-lg"
                   src={services[i]?.cardImage}
                   alt="services"
-                ></Image>
+                />
                 <div className="maketrnstion bg absolute bottom-0 left-0 -z-50 w-full rounded-lg bg-gray-100 bg-opacity-5 bg-clip-padding p-8 backdrop-blur-sm backdrop-filter ">
                   <h1 className="text-center font-sans text-xl font-extrabold text-cstmclr-50">
                     {services[i]?.serviceName}
