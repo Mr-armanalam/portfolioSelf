@@ -41,6 +41,7 @@
         --chart-4:43 74% 66%;
         --chart-5:27 87% 67%;
         --radius:0.5rem;
+        --animate1: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
     }
   .dark {
         --background:0 0% 3.9%;
@@ -67,6 +68,7 @@
         --chart-3:30 80% 55%;
         --chart-4:280 65% 60%;
         --chart-5:340 75% 55%;
+        --animate1: linear-gradient(110deg, black 8%, #090909 18%, black 33%);;
     }
 }
 @layer base {
@@ -87,7 +89,7 @@
 @media (min-width: 768px) {
   .animated-box1 {
     background: #fff;
-    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    background: var(--animate1);
     background-size: 200% 100%;
     animation: 3s shine linear infinite;
   } 

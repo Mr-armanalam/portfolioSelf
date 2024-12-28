@@ -3,26 +3,26 @@ import React from "react";
 import { FaLinkedin, FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { CgArrowLongRight } from "react-icons/cg";
-import selfPicture from "@/assets/armanhd3_enhanced.jpeg";
+import selfPicture from "@/assets/armanhd3_enhanced.png";
 import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="w-full px-2  pt-14 md:px-8 lg:pt-16">
+    <section className="w-full px-2 pt-14 md:px-8 lg:pt-16">
       <div
-        className="animated-box1 mt-4 flex h-fit flex-col rounded-xl border border-cstmclr-200 bg-white
-       text-center shadow md:flex-row md:rounded-lg md:text-left lg:items-center xl:py-2
+        className="animated-box1 mt-4 flex h-fit flex-col rounded-xl border border-cstmclr-200 bg-white text-center
+       shadow dark:border-[#151515] dark:bg-black md:flex-row md:rounded-lg md:text-left lg:items-center xl:py-2
       "
       >
         <div className="mx-4 mt-10 w-fit md:ml-8 md:max-w-[55vw] lg:my-auto  lg:ml-12 xl:ml-20">
-          <p className="text-2xl font-extrabold text-cstmclr-800 md:text-4xl">
+          <p className="text-2xl font-extrabold text-cstmclr-800 dark:text-cstmclr-500 md:text-4xl">
             Hey, I&apos;m Arman Alam{" "}
             <span className="hover:text-blue-900 md:text-nowrap">
               Full-Stack Web Developer
             </span>
           </p>
 
-          <p className="mt-8 text-sm text-cstmclr-500 md:text-base ">
+          <p className="mt-8 text-sm text-cstmclr-500 dark:text-cstmclr-600 md:text-base ">
             A passionate and dedicated developer with experienced in building
             dynamic and responsive web applications. My expertise lies in the{" "}
             <span className="font-bold hover:text-blue-900">MERN Stack</span>{" "}
@@ -31,7 +31,7 @@ const HeroSection = () => {
           </p>
 
           <div className="mt-10 flex items-center justify-center gap-2 md:mb-4 md:justify-start lg:mb-0">
-            <button className="mr-10 rounded bg-cstmclr-700 p-2 px-4 text-sm font-bold text-cstmclr-200 hover:bg-cstmclr-950 md:text-base">
+            <button className="mr-10 rounded bg-cstmclr-700 p-2 px-4 text-sm font-bold text-cstmclr-200 hover:bg-cstmclr-950 dark:bg-zinc-900 dark:text-cstmclr-400 dark:hover:bg-zinc-800 md:text-base">
               Reach Out
             </button>
             <div className="flex cursor-pointer items-center gap-1 text-cstmclr-700">
@@ -55,7 +55,7 @@ const HeroSection = () => {
         </div>
 
         <div className="mx-auto mb-12 mt-10 w-fit justify-center md:my-auto md:mb-0 md:flex md:h-[50vh] md:max-w-[45vw]">
-          <div className="relative h-[14rem] w-[14rem] rounded-full border border-cstmclr-600 bg-cover text-center md:my-auto md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem] ">
+          <div className="relative h-[14rem] w-[14rem] rounded-full border border-cstmclr-300 bg-white bg-cover text-center dark:border-cstmclr-600 dark:bg-zinc-950 md:my-auto md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem] ">
             <img
               src={selfPicture.src}
               className=" h-[14rem] w-[14rem] rounded-full md:h-[10rem] md:w-[10rem] lg:h-[16rem] lg:w-[16rem] xl:h-[18rem] xl:w-[18rem]"
