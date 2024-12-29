@@ -43,6 +43,8 @@
         --radius:0.5rem;
         --animate1: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
         --animatedBoxHover: linear-gradient(110deg, #fff 8%, #f3f4f6 18%, #fff 33%);
+        --animation3: linear-gradient(110deg, #f2f2f2 8%, #e0e0e0 18%, #f2f2f2 33%);
+        --animation4: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
     }
   .dark {
         --background:0 0% 3.9%;
@@ -71,6 +73,8 @@
         --chart-5:340 75% 55%;
         --animate1: linear-gradient(110deg, black 8%, #090909 18%, black 33%);
         --animatedBoxHover: linear-gradient(110deg, black 8%, #131313 18%, black 33%);
+        --animation3: linear-gradient(110deg, #101010 8%, #121212 18%, #101010 33%);
+        --animation4: linear-gradient(110deg, #0d0d0d 8%, #131313 18%, #0d0d0d 33%);
     }
 }
 @layer base {
@@ -99,7 +103,6 @@
 
 .animated-box:hover {
   background: #fff;
-  /* background: linear-gradient(110deg, #fff 8%, #f3f4f6 18%, #fff 33%); */
   background: var(--animatedBoxHover);
   background-size: 200% 100%;
   animation: 3.5s shine linear infinite;
@@ -107,7 +110,12 @@
 
 .animated-box2 {
   background: #fff;
-  background: linear-gradient(110deg, #f2f2f2 8%, #e0e0e0 18%, #f2f2f2 33%);
+  background: var(--animation3);
+  background-size: 200% 100%;
+  animation: 3.5s shine linear infinite;
+}
+.animated-box4 {
+  background: var(--animation4);
   background-size: 200% 100%;
   animation: 3.5s shine linear infinite;
 }
