@@ -18,7 +18,7 @@ const page = () => {
       <embed 
         color='transparent' 
         className="self-center h-[82vh] md:h-[100vh] w-full" 
-        src="/static/resumepdf.pdf" 
+        src="/static/resume.pdf" 
         type="application/pdf" 
         width={"100%"} 
         height={"100%"}
