@@ -28,7 +28,7 @@ const NavItem = () => {
   };
   return (
     <>
-      <ul className="flex flex-col gap-8 font-semibold text-cstmclr-800 dark:text-cstmclr-200 md:flex-row ">
+      <ul className="flex flex-col gap-8 font-semibold text-cstmclr-800 dark:text-cstmclr-200 md:flex-row md:text-xs lg:text-base ">
         <li>
           <Link
             className={`font-extrabold text-cstmclr-950 ${
