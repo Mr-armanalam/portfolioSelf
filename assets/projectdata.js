@@ -13,7 +13,7 @@ export const projectdata = [
     cardImage: devflow,
     projectName: "Dev Overflow",
     projectDescription: "",
-    link: "https://stack-overflow-gray.vercel.app/",
+    link: "https://dev-integrator.vercel.app/",
     gitlink: "https://github.com/Mr-armanalam/stack_overflow.git",
   },
   {
