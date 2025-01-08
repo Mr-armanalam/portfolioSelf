@@ -26,7 +26,7 @@ const page = () => {
     <main className="h-auto w-auto ">
       <div className="h-auto w-auto pt-16 ">
         <div className="mx-2 my-8 md:mx-12 md:mb-10 md:mt-16 ">
-          <h3 className="text-3xl font-extrabold text-cstmclr-900 dark:text-cstmclr-300 hover:text-cstmclr-950">
+          <h3 className="text-3xl font-extrabold text-cstmclr-900 hover:text-cstmclr-950 dark:text-cstmclr-300">
             My Services
           </h3>
           <p className="font-medium text-cstmclr-500">
@@ -67,7 +67,7 @@ const page = () => {
                     </p>
                   </h1>
                 </div>
-                <h2 className="px-2 pt-1.5 text-sm font-semibold text-cstmclr-900">
+                <h2 className="px-2 pt-1.5 text-sm font-semibold text-cstmclr-900 dark:text-gray-300">
                   {services[i].serviceName}
                 </h2>
               </div>
