@@ -24,13 +24,13 @@ export const InternData: IinterData[] = [
 
 export const InternPositionData = [
   {
-    time: "Sep 2024 - 2 months ",
+    time: "Aug 2024 - 3 months ",
     position: "Position: Full Stack Developer ",
     mode: "Mode: Online / Remote",
     link: "https://github.com/Mr-armanalam/Acube.git",
   },
   {
-    time: "Jun 2024 - 2 months ",
+    time: "May 2024 - 3 months ",
     position: "Position: Next.js Developer ",
     mode: "Mode: Online / Remote",
     link: "https://github.com/Mr-armanalam/ChatGemini.git",
